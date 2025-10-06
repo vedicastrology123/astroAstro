@@ -1,0 +1,30 @@
+---
+// src/components/ScrollContainer.astro
+---
+<div class="scroll-container">
+  <slot />
+</div>
+
+<style>
+  .scroll-container {
+    /* Set a max-height to enable scrolling */
+    max-height: 400px; /* Adjust this value as needed */
+
+    /* Enable vertical scrolling */
+    overflow-y: auto;
+
+    /* Optional: Add a custom style to the scrollbar */
+    scrollbar-color: #7d7d7d #e0e0e0;
+    scrollbar-width: thick;
+  }
+
+  /* Webkit-specific (Chrome, Safari, Edge) scrollbar styles */
+  .scroll-container::-webkit-scrollbar {
+    width: 25px;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #7d7d7d;
+    border-radius: 4px;
+  }
+</style>

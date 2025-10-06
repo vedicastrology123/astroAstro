@@ -1,0 +1,31 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import Announcements from '../components/Announcements.astro';
+---
+
+<Layout>
+<div id="container">
+	<img id="background" src={background.src} alt="" fetchpriority="high" />
+	<main>
+		<section id="hero">
+            <ion-text color="primary">
+                <h1>About Us</h1>
+            </ion-text>
+
+<ion-router-link href="https://stevehora.com">Vedic Astrology by Steve Hora, Vedic Astrology Expert</ion-router-link>
+
+            <ion-text color="dark">
+                <p>Vedic Astrologer</p>
+            </ion-text>
+			<section id="links">
+				<p><ion-router-link href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0">Chat with Steve Hora, Vedic Astrologer</ion-router-link></p>
+				<ion-router-link href="hhttps://chat.arattai.in/groups/j43545f313239303430363134313434313835363839315f32303030363635363837322d47437c3031303131323034333234353137353935373138353436383830">Join our Arattai App Group</ion-router-link>
+			</section>
+		</section>
+	</main>
+	<Announcements />
+</div>
+</Layout>

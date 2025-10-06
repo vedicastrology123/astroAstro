@@ -1,0 +1,21 @@
+{
+  "menu": {
+    "menu1": "home",
+    "menu2": "Aries - AI Astrology GPT",
+    "menu3": "about",
+    "menu4": "contact",
+    "url1": "/",
+    "url2": "/",
+    "url3": "/about",
+    "url4": "/contact",
+    "icon1": "desktop-outline",
+    "icon2": "book-outline",
+    "icon3": "accessibility-outline",
+    "icon4": "qr-code-outline"
+  },
+  "author": {
+    "name": "Steve Hora",
+    "email": "vedicastrology123@gmail.com",
+    "url": "https://stevehora.com/"
+  }
+}
