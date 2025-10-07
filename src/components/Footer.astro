@@ -3,13 +3,13 @@ import metaInfo from '../data/metadata.json';
 ---
 
 <ion-footer>
-<ion-toolbar>
+<ion-toolbar color="primary">
 <ion-tabs>
-<ion-tab-bar class="ion-justify-content-around" slot="bottom" color="dark">
+<ion-tab-bar class="ion-justify-content-around" slot="bottom" color="secondary">
 <ion-tab-button href={ metaInfo.menu.url1 }>
 <ion-icon name={ metaInfo.menu.icon1 }></ion-icon>
 <ion-label>{ metaInfo.menu.menu1 }</ion-label></ion-tab-button>
-<ion-tab-button href={ metaInfo.menu.url2 }>
+<ion-tab-button href={ metaInfo.menu.url2 }  target="_blank">
 <ion-icon name={ metaInfo.menu.icon2 }></ion-icon>
 <ion-label>{ metaInfo.menu.menu2 }</ion-label></ion-tab-button>
 <ion-tab-button href={ metaInfo.menu.url3 }>

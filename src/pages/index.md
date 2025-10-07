@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/Layout.astro
-title: "Vedic Astrology"
+layout: ../layouts/PostLayout.astro
+title: "Vedic Astrologer-stevehora.com "
 pubDate: "2020-06-02T12:52:36+06:00"
 image: "images/success.jpg"
 author: Steve Hora

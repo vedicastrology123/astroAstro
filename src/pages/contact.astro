@@ -4,9 +4,13 @@ import background from '../assets/background.svg';
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Announcements from '../components/Announcements.astro';
+import SiteData from "../data/siteData.json";
+
+const pageSeo = SiteData.pages.contact;      // choose slice for /about
+
 ---
 
-<Layout>
+<Layout seo={pageSeo}>
 <div id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main>

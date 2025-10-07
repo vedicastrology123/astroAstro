@@ -1,0 +1,33 @@
+{
+  "default": {
+    "name": "Vedic Astrology by Steve Hora",
+    "title": "Vedic Astrology by Steve Hora",
+    "description": "Vedic Astrology by Steve Hora",
+    "openGraph": { 
+      "basic": {
+        "title": "Vedic Astrology by Steve Hora",
+        "description": "Vedic Astrology by Steve Hora",
+        "type": "website",
+        "url": "https://stevehora.com",
+        "image": "https://stevehora.com/shri-chakra.png"
+      }
+    },
+    "twitter": {
+      "title": "Vedic Astrology by Steve Hora",
+      "description": "Vedic Astrology by Steve Hora",
+      "creator": "@AstrologyOrbit"
+    }
+  },
+  "pages": {
+    "about": {
+      "name": "Vedic Astrology by Steve Hora - About",
+      "title": "About - Vedic Astrology by Steve Hora",
+      "description": "Vedic Astrology by Steve Hora"
+    },
+    "contact": {
+      "name": "Contact Vedic Astrology by Steve Hora",
+      "title": "Contact - www.stevehora.com",
+      "description": "vedicastrology123@gmail.com"
+    }
+  }
+}

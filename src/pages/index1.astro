@@ -1,17 +1,19 @@
 ---
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
+import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 import Announcements from '../components/Announcements.astro';
 ---
-		
+
+<Layout>
 <div id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main>
 		<section id="hero">
-		<p>Info</p>
-			<slot />
+
 		</section>
 	</main>
 	<Announcements />
 </div>
+</Layout>

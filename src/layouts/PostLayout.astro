@@ -1,5 +1,4 @@
 ---
-import Header from '../components/Header.astro';
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import '../styles/global.css';
@@ -10,8 +9,14 @@ import Footer from '../components/Footer.astro';
 import siteDefaults from '../data/siteData.json';
 import { SEO } from "astro-seo";
 
-const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
-const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  frontmatter: CollectionEntry<'blog'>['data'];
+}
+
+const { frontmatter } = Astro.props;
+const seo = { ...siteDefaults.default, ...frontmatter }; // Merge defaults with overrides
 
 ---
 
@@ -48,9 +53,8 @@ return (
 				<div id="container">
 					<img id="background" src={background.src} alt="" fetchpriority="high" />
 					<main>
-						<ion-content>
+						<ion-content style="margin-left: 50px; margin-right: 20px; margin-top: 10px; margin-botton-20px;">
 							<slot />
-							<Announcements />
 						</ion-content>
 					</main>
 				</div>
