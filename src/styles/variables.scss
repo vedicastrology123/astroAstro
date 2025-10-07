@@ -1,0 +1,13 @@
+    /* In your variables.scss or a component's scss */
+    ion-content.ion-padding {
+        --ion-padding: 25px; /* Adjust as needed */
+    }
+
+    ion-row {
+        height: 100%; /* Or use a relative unit like vh */
+        //align-items: stretch; /* This is the default, but good to be explicit */
+    }
+
+    // :root {
+    //     --ion-padding: 120px;
+    // }

@@ -2,6 +2,7 @@
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import '../styles/global.css';
+import '../styles/variables.scss';
 import Navigation from '../components/Navigation.astro';
 import ScrollContainer from '../components/ScrollContainer.astro';
 import Announcements from '../components/Announcements.astro';
@@ -17,6 +18,8 @@ export interface Props {
 
 const { frontmatter } = Astro.props;
 const seo = { ...siteDefaults.default, ...frontmatter }; // Merge defaults with overrides
+
+const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }));
 
 ---
 
@@ -53,9 +56,27 @@ return (
 				<div id="container">
 					<img id="background" src={background.src} alt="" fetchpriority="high" />
 					<main>
-						<ion-content style="margin-left: 50px; margin-right: 20px; margin-top: 10px; margin-botton-20px;">
-							<slot />
-						</ion-content>
+						<ion-grid>
+							<ion-row>
+								<!-- One small column and two larger ones -->
+								<ion-col size="auto">
+									<div class="column-content"><h3>Articles</h3></div>
+										<ul>
+										
+											{Object.entries(allPosts).map(([slug, post]) => (
+												<li>
+													<a href={post.url}>{post.frontmatter.title}</a>
+												</li>
+											))}
+										</ul>
+								</ion-col>
+								<ion-col>
+									<ion-content class="ion-padding">
+										<slot />
+									</ion-content>
+								</ion-col>
+							</ion-row>
+						</ion-grid>
 					</main>
 				</div>
 			<Footer />
@@ -63,3 +84,10 @@ return (
 	</body>
 </html>
 );
+
+<style>
+.column-content {
+  padding: 10px;
+  text-align: center;
+}
+</style>
