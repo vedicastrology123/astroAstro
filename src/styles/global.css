@@ -186,3 +186,16 @@ code {
         line-height: 1.5;
     }
 }
+
+table, th, td {
+    border: 1px solid #ffffff;
+    border-collapse: collapse; /* Merges adjacent borders */
+}
+th, td {
+    padding: 8px; /* Optional: Adds spacing inside cells */
+}
+p {
+    line-height: 2.0; /* Adjust line height */
+    margin-bottom: 1em; /* Adjust spacing between paragraphs */
+    max-width: 80ch;
+}

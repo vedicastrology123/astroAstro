@@ -38,7 +38,7 @@ article:
 ### In-Depth knowledge
 [Vedic Astrology](https://en.wikipedia.org/wiki/Hindu_astrology) is a vast subject. Steve Hora and other astrologers on our website, have in-depth knowledge for horoscope predictions.
 
-**Privacy**: [We respect the privacy of yours](/articles/privacy/) and **DO NOT DISCLOSE any private information to anyone**.
+**Privacy**: [We respect the privacy of yours](./../amsa/) and **DO NOT DISCLOSE any private information to anyone**.
 
 **Accurate Predictions** : Vedic Astrology is about accurate Vedic birth chart Predictions. Steve Hora uses a Mundane Predictions technique from Tamil Nadi Grantha, with which the Timing and Predictions are accurately given.
 
@@ -53,13 +53,13 @@ Personalized Shri Chakra as per your horoscope, for meditation. Personalized man
 
 **For Marriage** : Get predictions and solutions from Our Astrologers for your life problems.
 
-[For Marriage Horoscope and Nakshatra matching](/articles/marriage-compatibility/) of boy and girl, contact us.
+[For Marriage Horoscope and Nakshatra matching](./../marriage-compatibility/) of boy and girl, contact us.
 
 Reach us at  **vedicastrology123@gmail.com**
 
 **Vedic Astrology Information**
 
-* [Vedic Astrology books pdf and articles](/articles/vedic-astrology-books/).
+* [Vedic Astrology books pdf and articles](./../vedic-astrology-books/).
 * Vedic Astrology apps, ebooks and education.
 * Vedic Astrology a guide to the fundamentals of jyotish.
 * Reading a Vedic Astrology chart.
