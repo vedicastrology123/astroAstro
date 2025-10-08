@@ -1,0 +1,76 @@
+---
+import astroLogo from '../assets/astro.svg';
+import background from '../assets/background.svg';
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Menu from '../components/Menu.astro';
+import ScrollContainer from '../components/ScrollContainer.astro';
+import Announcements from '../components/Announcements.astro';
+import Footer from '../components/Footer.astro';
+import siteDefaults from '../data/siteData.json';
+import { SEO } from "astro-seo";
+
+const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
+const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
+
+---
+
+return (
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="color-scheme" content="dark" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- Import core Ionic CSS -->
+        <link rel="stylesheet" href="/node_modules/@ionic/core/css/core.css">
+        <link rel="stylesheet" href="/node_modules/@ionic/core/css/normalize.css">
+        <link rel="stylesheet" href="/node_modules/@ionic/core/css/structure.css">
+        <link rel="stylesheet" href="/node_modules/@ionic/core/css/typography.css">
+        <!-- Optional: Import platform-specific styles if needed -->
+        <link rel="stylesheet" href="/node_modules/@ionic/core/css/ionic.bundle.css"> 
+        <!-- You might also consider importing specific themes like: -->
+        <link rel="stylesheet" href="/node_modules/@ionic/core/css/palettes/dark.always.css">
+		<link rel="stylesheet" href="/src/styles/global.css">
+		<script type="module" src="/node_modules/@ionic/core/dist/ionic/ionic.esm.js"></script>
+		<script nomodule src="/node_modules/@ionic/core/dist/ionic/ionic.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('nav').classList.toggle('hidden');
+  });
+</script>
+
+		<link rel="sitemap" href="/sitemap-index.xml" />
+
+		<SEO {...seo} />
+	</head>
+	<body>
+		<ion-app>
+			<Navigation />
+				<div id="container">
+					<img id="background" src={background.src} alt="" fetchpriority="high" />
+					<main>
+					<Menu />
+						<ion-content>
+							<slot />
+						</ion-content>
+					</main>
+				</div>
+			<Footer />
+		</ion-app>
+	</body>
+</html>
+);
+
+<style>
+	ion-content {
+	--padding-top: 20px;
+	--padding-bottom: 20px;
+	--padding-start: 75px; /* for left padding in LTR, right in RTL */
+	--padding-end: 75px;   /* for right padding in LTR, left in RTL */
+	}
+</style>

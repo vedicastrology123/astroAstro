@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/PostsLayout.astro
 title: "Amsa"
 pubDate: "2020-06-02T12:52:36+06:00"
 image: "images/success.jpg"

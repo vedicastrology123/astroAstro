@@ -1,0 +1,33 @@
+---
+const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }));
+
+---
+<style is:global>
+  ion-menu {
+    --ion-background-color: #333; /* Dark gray */
+  }
+  ion-toolbar {
+    --background: #4077cfff; /* Your desired background color */
+  }
+</style>
+
+<ion-menu side="start" content-id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Astrology Articles</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <!-- Menu content goes here -->
+    <ul>
+    
+      {Object.entries(allPosts).map(([slug, post]) => (
+        <li>
+          <a href={post.url}>{post.frontmatter.title}</a>
+        </li>
+      ))}
+    </ul>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main-content"></ion-router-outlet>

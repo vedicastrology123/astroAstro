@@ -1,0 +1,26 @@
+            <ion-buttons class="ion-margin-start" slot="start">
+
+                <ion-menu-button class="ion-no-padding ion-no-margin" auto-hide="false">
+                        <!-- Optional: Use a custom SVG icon for the button -->
+                    <!-- <ion-icon color="primary" src="./../assets/astro.svg"></ion-icon> -->
+                </ion-menu-button>
+            </ion-buttons>
+
+            									<div class="column-content"><h3>Articles</h3></div>
+										<ul>
+										
+											{Object.entries(allPosts).map(([slug, post]) => (
+												<li>
+													<a href={post.url}>{post.frontmatter.title}</a>
+												</li>
+											))}
+										</ul>
+
+
+										{{< amp-image
+  alt="A sample Vedic Astrology Birth Chart"
+  src="/images/birth-chart.png"
+  width="400"
+  height="500"
+>}}
+![A sample Vedic Astrology Birth Chart](/src/static/images/birth-chart.png "Birth Chart")

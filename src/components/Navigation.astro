@@ -1,37 +1,53 @@
 ---
 
 ---
-    <ion-header>
-    
-        <ion-toolbar color="secondary">
-            <ion-buttons class="ion-margin-start" slot="start">
-                <a href="/">
-                    <ion-img src="https://stevehora.com/shri-chakra.png" style="width: 32px;"></ion-img>
-                </a>
-            </ion-buttons>
-        <ion-buttons slot="secondary">
-        <ion-button href="https://twitter.com/SteveVedicAstro" target="_blank">
-        <ion-icon name="logo-twitter"></ion-icon>
-        </ion-button>
-        </ion-buttons>
-        <ion-buttons slot="primary">
-        <ion-button href="https://www.facebook.com/vedic.astrology123/" target="_blank">
-        <ion-icon name="logo-facebook"></ion-icon>
-        </ion-button>
-        </ion-buttons>
-        <ion-buttons slot="primary">
-        <ion-button href="https://www.instagram.com/stevehora_vedicastrology/" target="_blank">
-        <ion-icon name="logo-instagram"></ion-icon>
-        </ion-button>
-        </ion-buttons>
-        <ion-buttons slot="primary">
-        <ion-button href="https://www.linkedin.com/in/steve-hora-vedic-astrologer" target="_blank">
-        <ion-icon name="logo-linkedin"></ion-icon>
-        </ion-button>
-        </ion-buttons>
-        <ion-title class="ion-text-center">Vedic Astrology</ion-title>
-        <ion-title class="ion-text-center">Your Destiny Your Success</ion-title>
-        <ion-title class="ion-text-center">Steve Hora, Vedic Astrology Expert</ion-title>
+<style>
+.icon-bg {
+  background-color: #3a8adaff;   /* sets background color */
+  border-radius: 50%;          /* round edges, use 50% for circle */
+  padding-start: 50px;               /* space around icon */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.icon-bg ion-icon {
+  color: #000;                 /* icon color (white) */
+  font-size: 36px;             /* icon size */
+}
+</style>
+
+    <ion-header>
+        <ion-toolbar color="secondary">       
+            <ion-buttons slot="start">
+                <ion-menu-button>
+                    <span class="icon-bg">
+                        <ion-icon name="menu"></ion-icon>
+                    </span
+                </ion-menu-button>
+            </ion-buttons>
+            <ion-title class="ion-text-center">Vedic Astrology</ion-title>
+            <ion-title class="ion-text-center">Steve Hora</ion-title>
+
+            <ion-buttons slot="end">
+                <ion-button href="https://twitter.com/SteveVedicAstro" target="_blank">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button href="https://www.facebook.com/vedic.astrology123/" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button href="https://www.instagram.com/stevehora_vedicastrology/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button href="https://www.linkedin.com/in/steve-hora-vedic-astrologer" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
