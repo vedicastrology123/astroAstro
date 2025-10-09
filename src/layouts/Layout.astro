@@ -11,15 +11,16 @@ import Footer from '../components/Footer.astro';
 import AstroSeo from '../components/AstroSeo.astro';
 import Schema from '../components/Schema.astro';
 import PageSchema from '../components/PageSchema.astro';
+import ArticleSchema from '../components/ArticleSchema.astro';
 ---
 
-return (
 <!doctype html>
 <html lang="en">
 	<head>
 		<AstroSeo slot="head" {...Astro.props} />
 		<Schema slot="head" {...Astro.props} />
 		<PageSchema slot="head" {...Astro.props} />
+		<ArticleSchema slot="head" {...Astro.props} />
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -64,7 +65,6 @@ return (
 		</ion-app>
 	</body>
 </html>
-);
 
 <style>
 	ion-content {

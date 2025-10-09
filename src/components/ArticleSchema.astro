@@ -1,0 +1,26 @@
+---
+import siteData from '../data/siteData.json';
+import { Schema } from 'astro-seo-schema';
+import siteDefaults from '../data/siteData.json';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
+const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
+const siteURL = new URL("/", Astro.url);
+
+---
+
+<Schema item={{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": seo.title,
+    "author": {
+        "@type": "Person",
+        "name": seo.contact.name,
+    },
+    "datePublished": seo.lastmod,
+    "image": "your-image.jpg", // Optional
+    "articleBody": seo.description,
+    "url": siteURL
+}} />

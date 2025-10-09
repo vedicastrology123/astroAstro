@@ -6,30 +6,28 @@ import Layout from '../layouts/Layout.astro';
 import Announcements from '../components/Announcements.astro';
 import SiteData from "../data/siteData.json";
 
-const pageSeo = SiteData.pages.contact;      // choose slice for /about
-
 ---
 
-<Layout seo={pageSeo}>
-<div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<main>
-		<section id="hero">
-            <ion-text color="primary">
-                <h1>Contact Us</h1>
-            </ion-text>
-
-			<ion-router-link href="mailto:vedicastrlogy123@gmail.com"><u>Email of Steve Hora</u>, Vedic Astrology Expert</ion-router-link>
-			<br>
-			<section id="links">
-			<ion-text color="dark">
-				<p><ion-router-link href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0"><u>Whatsapp</u> Chat</ion-router-link></p>
-				<br>
-				<ion-router-link href="hhttps://chat.arattai.in/groups/j43545f313239303430363134313434313835363839315f32303030363635363837322d47437c3031303131323034333234353137353935373138353436383830">Join our <u>Arattai App Group</u></ion-router-link>
+<Layout>
+	<div id="container">
+		<img id="background" src={background.src} alt="" fetchpriority="high" />
+		<main>
+			<section id="hero">
+				<ion-text color="primary">
+					<h1>Contact Us</h1>
 				</ion-text>
+
+				<ion-router-link href="mailto:vedicastrlogy123@gmail.com"><u>Email of Steve Hora</u>, Vedic Astrology Expert</ion-router-link>
+				<br>
+				<section id="links">
+				<ion-text color="dark">
+					<p><ion-router-link href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0"><u>Whatsapp</u> Chat</ion-router-link></p>
+					<br>
+					<ion-router-link href="hhttps://chat.arattai.in/groups/j43545f313239303430363134313434313835363839315f32303030363635363837322d47437c3031303131323034333234353137353935373138353436383830">Join our <u>Arattai App Group</u></ion-router-link>
+					</ion-text>
+				</section>
 			</section>
-		</section>
-	</main>
-	<Announcements />
-</div>
+		</main>
+		<Announcements />
+	</div>
 </Layout>

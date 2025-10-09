@@ -6,7 +6,7 @@ image: "images/success.jpg"
 author: Steve Hora
 information: "Expert Vedic Astrologer"
 lead: Vedic Astrology by Steve Hora
-lastmod: latest 
+lastmod: "2020-06-02T12:52:36+06:00" 
 description : "Hora Vedic Astrology Advice by Steve for Birth Chart Wealth Predictions"
 type: "index"
 categories: 
