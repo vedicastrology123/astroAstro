@@ -1,0 +1,23 @@
+---
+import siteData from '../data/siteData.json';
+import { Schema } from 'astro-seo-schema';
+import siteDefaults from '../data/siteData.json';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
+const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
+
+---
+
+
+<Schema
+  item={{
+      // The @context property specifies the vocabulary (schema.org in this case)
+      "@context": "https://schema.org",
+      // Define the type of content the page represents
+      "@type": "WebPage",
+      // Provide the meta keywords in an array
+      keywords: ["astro", "seo", "web development", "meta tags"]
+  }}
+/>

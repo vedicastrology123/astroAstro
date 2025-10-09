@@ -1,26 +1,353 @@
-            <ion-buttons class="ion-margin-start" slot="start">
+<title>Vedic Astrology</title>
+        <meta property="og:title" content="Vedic Astrology" />
+<meta property="og:description" content="Hora Vedic Astrology Advice by Steve for Birth Chart Wealth Predictions" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://stevehora.com/" />
 
-                <ion-menu-button class="ion-no-padding ion-no-margin" auto-hide="false">
-                        <!-- Optional: Use a custom SVG icon for the button -->
-                    <!-- <ion-icon color="primary" src="./../assets/astro.svg"></ion-icon> -->
-                </ion-menu-button>
-            </ion-buttons>
-
-            									<div class="column-content"><h3>Articles</h3></div>
-										<ul>
-										
-											{Object.entries(allPosts).map(([slug, post]) => (
-												<li>
-													<a href={post.url}>{post.frontmatter.title}</a>
-												</li>
-											))}
-										</ul>
+    
+            <meta property="og:image" content="https://stevehora.com/images/vedic-astrology.gif" />
+    
 
 
-										{{< amp-image
-  alt="A sample Vedic Astrology Birth Chart"
-  src="/images/birth-chart.png"
-  width="400"
-  height="500"
->}}
-![A sample Vedic Astrology Birth Chart](/src/static/images/birth-chart.png "Birth Chart")
+
+    
+        <meta property="og:updated_time" content="2020-06-02T06:52:36Z"/>
+    
+
+
+
+
+    
+        <meta property="og:locale" content="en_US" />
+    
+
+
+    <meta property="og:site_name" content="Vedic Astrology :: Vedic Astrology by Steve Hora accurate prediction from Birth Chart for Health Wealth Happiness Destiny Fame Success. Mantra Solution Consultation Advice." />
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta property="fb:admins" content="https://www.facebook.com/vedicastrology123" />
+
+
+
+    
+        <meta name="twitter:card" content="summary_large_image"/>
+    
+
+
+
+<meta name="twitter:site" content="@AstrologyOrbit"/>
+
+<meta itemprop="name" content="Vedic Astrology">
+<meta itemprop="description" content="Hora Vedic Astrology Advice by Steve for Birth Chart Wealth Predictions">
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": " Vedic Astrology by Steve Hora accurate prediction from Birth Chart for Health Wealth Happiness Destiny Fame Success. Mantra Solution Consultation Advice.",
+    "alternateName": "Hora Vedic Astrology by Steve",
+    "url": "https:\/\/stevehora.com",
+
+	"keywords" : [  "Vedic Astrology"  , "Jyotish"  , "Calculate your Vedic Astrology Birth Chart"  , "Read Birth Chart"  , "Hora"  , "Steve"  , "Advice"  , "Wealth"  , "Matrimony matching"  , "love compatibility"  , "27 nakshatras"  , "20 divisional charts"  , "Jyotish"  , "Astrology Chat"  , "Quora Question and Answers" ],
+
+
+	"description": "Vedic Astrology by Steve Hora accurate prediction from Birth Chart for Health Wealth Happiness Destiny Fame Success. Mantra Solution Consultation Advice.",
+    "thumbnailUrl": "https:\/\/stevehora.com\/shri-chakra.png",
+     "sameAs": [ 
+     "https://www.facebook.com/SteveHoraAstrologer",
+     "https://twitter.com/AstrologyOrbit"
+     ],
+    "license": "Copyright 2014 stevehora.com - All rights reserved - "
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Thing",
+  "name": "Vedic Astrology",
+  "subjectOf": {
+    "@type": "CreativeWork",
+    "name": "Hora Vedic Astrology by Steve"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "stevehora.com",
+  "url": "https:\/\/stevehora.com"
+  
+  , "logo": "images\/shrichakra.png"
+  , "address": "SFO, USA"
+  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position":  1 ,
+        "item": {
+          "@id": "https:\/\/stevehora.com",
+          "name": "Home"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  2 ,
+        "item": {
+          "@id": "https:\/\/stevehora.com\/steve-hora\/",
+          "name": "Steve Hora - Vedic Astrologer"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https:\/\/stevehora.com\/vedic-chart\/",
+          "name": "Calculate Your Vedic Astrology Chart"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  4 ,
+        "item": {
+          "@id": "https:\/\/stevehora.com\/articles\/",
+          "name": "Articles - Vedic Astrology"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  5 ,
+        "item": {
+          "@id": "https:\/\/stevehora.com\/about\/",
+          "name": "About"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  6 ,
+        "item": {
+          "@id": "https:\/\/stevehora.com\/contact\/",
+          "name": "Contact"
+        }
+    }]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Hora Vedic Astrology by Steve Hora - Sign",
+	  "hasPart": {
+		"@type": "Clip",
+		"name": "Hora Vedic Astrology by Steve Hora - Sign",
+		"startOffset": 10,
+		"url": "https://youtu.be/WL7H-v_LzDw?t=10",
+		"endOffset": 54
+	  },
+      "description": "Hora Vedic Astrology by Steve. Movable, Fixed and Dual - Chara, Sthira and Dwiswa Mesha, Kataka, Thula and Makara are chara rasis, ruled by Brahma, the Creator and nature is to",
+	"thumbnailUrl": [
+        "https://i.ytimg.com/vi/WL7H-v_LzDw/hqdefault.jpg"
+       ],
+      "uploadDate": "2019-04-30T04:19:50Z",
+      "duration": "PT1M54S",
+      "contentUrl": "https://youtu.be/WL7H-v_LzDw",
+	  "embedURL": "https://www.youtube.com/embed/WL7H-v_LzDw?rel=0"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Steve Hora - Drekkana - Vedic Astrology",
+      "description": "Hora Vedic Astrology by Steve Drekkana Revelation using Drekkana By Steve Hora Astrology Expert at Quora Can the fire accident at Notr",
+	  "hasPart": {
+		"@type": "Clip",
+		"name": "Hora Vedic Astrology by Steve Hora - Sign",
+		"startOffset": 10,
+		"url": "https://youtu.be/L5NCD05E2dE?t=10",
+		"endOffset": 54
+	  },
+
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/L5NCD05E2dE/hqdefault.jpg"
+       ],
+      "uploadDate": "2019-04-25T14:48:23Z",
+      "duration": "PT1M55S",
+      "contentUrl": "https://youtu.be/L5NCD05E2dE",
+	  "embedURL": "https://www.youtube.com/embed/L5NCD05E2dE?rel=0"
+    }
+</script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Mantra Prabhava",
+      "description": "Hora Vedic Astrology by Steve Mantra Prabhava - Influence of Grahas using Mantra for Success",
+	  "hasPart": {
+		"@type": "Clip",
+		"name": "Hora Vedic Astrology by Steve Hora - Sign",
+		"startOffset": 10,
+		"url": "https://youtu.be/pPt8fyLvdqg?t=10",
+		"endOffset": 54
+	  },
+
+      "thumbnailUrl": [
+        "https://i.ytimg.com/vi/pPt8fyLvdqg/hqdefault.jpg"
+       ],
+      "uploadDate": "2016-11-24T04:00:30Z",
+      "duration": "PT1M44S",
+      "contentUrl": "https://youtu.be/pPt8fyLvdqg",
+	  "embedURL": "https://www.youtube.com/embed/pPt8fyLvdqg?rel=0"
+    }
+</script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Shri Chakra Yantra",
+      "image": [
+        "https://stevehora.com/images/products/ShriChakra.png"
+       ],
+      "description": "Shri Chakra for achieving success. Mantra, Yantra and Tantra will be given with it.",
+      "sku": "mwtcqrty",
+      "mpn": "mwtcqrty",
+      "brand": {
+        "@type": "Brand",
+        "name": "Stevehora.com"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Steve Hora"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "89"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://stevehora.com/blog/tithi-information",
+        "priceCurrency": "USD",
+        "price": "34.99",
+        "priceValidUntil": "2020-05-20",
+        "itemCondition": "https://schema.org/New",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "stevehora.com"
+        }
+      }
+    }
+    </script>
+
+
+    
+    
+        
+    
+
+
+
+    
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "headline": "Vedic Astrology",
+  "award": "Most Viewed Writer on Quora",
+  "editor": "Steve Hora",
+  "articleBody": "Vedic Astrology It is one of the limbs of Vedas, the ancient Hindu scriptures. In Vedic Astrology, the destiny of a person is determined by his\/her karma, which is set forth in the cosmic design.",
+  "name": "Vedic Astrology",
+  "alternativeHeadline": "Steve Hora - An expert Vedic Astrologer",
+  "description": "Hora Vedic Astrology Advice by Steve for Birth Chart Wealth Predictions",
+  "wordCount":  625 ,
+  "datePublished" : "2020-06-02T12:52:36",
+  "dateModified" : "2023-05-01T07:09:47",
+  "author": {
+    "name" : "Steve Hora"
+  },
+  
+  
+  "keywords" : [ "Vedic Astrology" , "Jyotish" , "Calculate your Vedic Astrology Birth Chart" , "Read Birth Chart" , "Hora" , "Steve" , "Advice" , "Wealth" , "Matrimony matching" , "love compatibility" , "27 nakshatras" , "20 divisional charts" , "Jyotish" , "Astrology Chat" , "Quora Question and Answers" ],
+
+
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https:\/\/stevehora.com\/"
+  },
+  "image" : {
+      "@context": "http://schema.org",
+      "@type": "ImageObject",
+      "author": "Steve Hora",
+      "url": "https:\/\/stevehora.com\/images\/vaashicon.png",
+      "datePublished": "2020-06-02T12:52:36",
+      "name": "",
+	  "height": 1200,
+	  "width": 1200,
+      "license" : "",
+      "isBasedOn" : "",
+	  "acquireLicensePage" : "https://stevehora.com/contact/"
+  },
+  
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "Vedic Astrology",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url": "https:\/\/stevehora.com\/shri-chakra.png",
+		"license" : "https://creativecommons.org/licenses/by-sa/4.0/",
+        "height": 1200,
+	    "width": 1200,
+	    "isBasedOn" : "",
+	    "acquireLicensePage" : "https://stevehora.com/contact/"
+    }
+  }
+}
+</script>
+
+
+
+
+
+	<meta name="keywords" content= " Vedic Astrology, Jyotish, Calculate your Vedic Astrology Birth Chart, Read Birth Chart, Hora, Steve, Advice, Wealth, Matrimony matching, love compatibility, 27 nakshatras, 20 divisional charts, Jyotish, Astrology Chat, Quora Question and Answers"/>
+

@@ -7,11 +7,8 @@ import Menu from '../components/Menu.astro';
 import ScrollContainer from '../components/ScrollContainer.astro';
 import Announcements from '../components/Announcements.astro';
 import Footer from '../components/Footer.astro';
-import siteDefaults from '../data/siteData.json';
-import { SEO } from "astro-seo";
 
-const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
-const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
+import { AstroSeo } from '@astrolib/seo';
 
 ---
 
@@ -19,6 +16,7 @@ return (
 <!doctype html>
 <html lang="en">
 	<head>
+		<AstroSeo slot="head" {...Astro.props} />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="color-scheme" content="dark" />
@@ -37,16 +35,13 @@ return (
 		<link rel="stylesheet" href="/src/styles/global.css">
 		<script type="module" src="/node_modules/@ionic/core/dist/ionic/ionic.esm.js"></script>
 		<script nomodule src="/node_modules/@ionic/core/dist/ionic/ionic.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script>
-  document.getElementById('hamburger').addEventListener('click', () => {
-    document.getElementById('nav').classList.toggle('hidden');
-  });
-</script>
-
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script>
+		document.getElementById('hamburger').addEventListener('click', () => {
+			document.getElementById('nav').classList.toggle('hidden');
+		});
+		</script>
 		<link rel="sitemap" href="/sitemap-index.xml" />
-
-		<SEO {...seo} />
 	</head>
 	<body>
 		<ion-app>

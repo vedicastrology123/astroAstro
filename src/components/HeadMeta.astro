@@ -1,0 +1,67 @@
+---
+import siteData from '../data/siteData.json';
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.url);
+const siteURL = new URL("/", Astro.url);
+const webSiteSchema = new URL("/#/schema/WebSite", Astro.url);
+const personSchema = new URL("/#/schema/Person/stevehora", Astro.url);
+
+export interface Props {
+    title: string;
+    description: string;
+    keywords?: string[];
+    author: string;
+    canonical?: string;
+    // Additional props can be defined here
+}
+
+const { type, title, description, pubDate, updatedDate, keywords } = Astro.props;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": webSiteSchema,
+      name: siteData.default.name,
+      description: siteData.default.description,
+      url: siteURL,
+      publisher: {
+        "@type": "Person",
+        "@id": personSchema,
+        name: "Steve Hora",
+        url: siteURL,
+        sameAs: [
+          "https://www.facebook.com/vedic.astrology123/",
+          "https://twitter.com/SteveVedicAstro",
+          "https://www.instagram.com/stevehora_vedicastrology/",
+          "https://www.linkedin.com/in/steve-hora-vedic-astrologer"
+        ]
+      },
+      "keywords": keywords ? keywords.join(',') : undefined,
+      thumbnailUrl: "https://stevehora.com/shri-chakra.png",
+      license: siteData.default.license
+    },
+    ...type ?
+    [{
+      "@type": type,
+      "@id": canonicalURL,
+      url: canonicalURL,
+      name: title,
+      headline: title,
+      description: description,
+      isPartOf: {
+        "@id": webSiteSchema,
+      },
+      datePublished: pubDate,
+      dateModified: updatedDate,
+      author: {
+        "@type": "Person",
+        "@id": personSchema,
+      }
+    }] : []
+  ]
+}
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
