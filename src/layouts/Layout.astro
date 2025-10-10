@@ -11,7 +11,7 @@ import Footer from '../components/Footer.astro';
 import AstroSeo from '../components/AstroSeo.astro';
 import Schema from '../components/Schema.astro';
 import PageSchema from '../components/PageSchema.astro';
-import ArticleSchema from '../components/ArticleSchema.astro';
+
 ---
 
 <!doctype html>
@@ -20,7 +20,9 @@ import ArticleSchema from '../components/ArticleSchema.astro';
 		<AstroSeo slot="head" {...Astro.props} />
 		<Schema slot="head" {...Astro.props} />
 		<PageSchema slot="head" {...Astro.props} />
-		<ArticleSchema slot="head" {...Astro.props} />
+		<Fragment slot="head">
+			<JSONLD frontmatter={frontmatter} url={url} />
+		</Fragment>
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />

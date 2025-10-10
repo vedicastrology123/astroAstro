@@ -1,0 +1,42 @@
+---
+import type { MarkdownInstance } from "astro";
+
+// Define a type for your blog post frontmatter.
+interface Frontmatter {
+  title: string;
+  description: string;
+  author: string;
+  date: Date;
+  image: {
+    src: string;
+    alt: string;
+  }
+}
+
+// Accept props and define their types.
+const { frontmatter, url } = Astro.props as {
+  frontmatter: Frontmatter;
+  url: URL;
+};
+
+// Create the JSON-LD schema using the frontmatter data.
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": frontmatter.title,
+  "description": frontmatter.description,
+  "datePublished": frontmatter.date,
+  "author": {
+    "@type": "Person",
+    "name": frontmatter.author,
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": new URL(frontmatter.image.src, Astro.site),
+    "caption": frontmatter.image.alt,
+  },
+  "url": new URL(url.pathname, Astro.site),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

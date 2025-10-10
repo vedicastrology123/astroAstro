@@ -2,10 +2,11 @@
 layout: ../../layouts/PostsLayout.astro
 title: "Vedic Astrology Books"
 descslug: "Vedic Astrology Books"
-date: 2020-04-07T12:52:36+06:00
+date: "2020-04-07T12:52:36+06:00"
 image: "images/success.jpg"
 author: Steve Hora
 description : "Learn"
+information: "Expert Vedic Astrologer"
 type: "post"
 categories: 
   - "Vedic Astrology"
@@ -31,7 +32,8 @@ article:
    src: "images/vaashicon.png"
    height: 60
    width: 60
-  
+path:
+  - "https://stevehora.com/vedic-astrology-books/"
 ---
 
 ### Books

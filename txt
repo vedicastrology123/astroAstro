@@ -1,3 +1,60 @@
+/*const articleSchema: Article = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": article.data.title,
+  "author": {
+    "@type": "Person",
+    "name": "Jane Doe"
+  },
+  "datePublished": date.toString(),
+  "image": "https://example.com/article-image.jpg",
+  "description": description,
+  "keywords": keywords.join(', '),
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonicalURL.href,
+  },
+}*/
+
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: article.title,
+  description: article.description,
+  keywords: article.keywords,
+  datePublished: article.date,
+  "image": "https://stevehora.com/shri-chakra.jpg",
+  "description": article.description,
+  "keywords": article.keywords.join(', '),
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonicalURL.href,
+  },
+};
+
+
+<script type="application/ld+json">
+  {JSON.stringify(structuredData, null, 2)}
+</script>
+//<Schema json={articleSchema} />
+
+//interface Props {
+//    post: CollectionEntry<'posts'>;
+//}
+
+//import { getCollection } from 'astro:content';
+//const posts = await getCollection('posts');
+
+//const { entry } = Astro.props;
+
+//const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
+//const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
+//const siteURL = new URL("/", Astro.url);
+
+
+
+
 <title>Vedic Astrology</title>
         <meta property="og:title" content="Vedic Astrology" />
 <meta property="og:description" content="Hora Vedic Astrology Advice by Steve for Birth Chart Wealth Predictions" />

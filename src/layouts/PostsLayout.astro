@@ -8,7 +8,17 @@ import ScrollContainer from '../components/ScrollContainer.astro';
 import Announcements from '../components/Announcements.astro';
 import Footer from '../components/Footer.astro';
 
-import { AstroSeo } from '@astrolib/seo';
+import AstroSeo from '../components/AstroSeo.astro';
+import Schema from '../components/Schema.astro';
+import PageSchema from '../components/PageSchema.astro';
+
+import JSONLD from "../components/JsonLd.astro";
+
+// Get the page's frontmatter from Astro.props
+const { frontmatter } = Astro.props;
+
+// Get the page's URL from Astro.url
+const url = Astro.url;
 
 ---
 
@@ -16,6 +26,12 @@ import { AstroSeo } from '@astrolib/seo';
 <html lang="en">
 	<head>
 		<AstroSeo slot="head" {...Astro.props} />
+		<Schema slot="head" {...Astro.props} />
+		<PageSchema slot="head" {...Astro.props} />
+		<Fragment slot="head">
+			<JSONLD frontmatter={frontmatter} url={url} />
+		</Fragment>
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="color-scheme" content="dark" />

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/PostsLayout.astro
 title: "About Us"
-date: 2019-05-14T14:46:10+06:00
+date: "2019-05-14T14:46:10+06:00"
 image: "images/banner.jpg"
 author: Steve Hora
 information: "Expert Vedic Astrologer"
