@@ -7,27 +7,52 @@ import Menu from '../components/Menu.astro';
 import ScrollContainer from '../components/ScrollContainer.astro';
 import Announcements from '../components/Announcements.astro';
 import Footer from '../components/Footer.astro';
+import { pwaAssetsHead } from 'virtual:pwa-assets/head';
+import { pwaInfo } from 'virtual:pwa-info';
 
-import AstroSeo from '../components/AstroSeo.astro';
+import AstroSeoInfo from '../components/AstroSeoInfo.astro';
 import Schema from '../components/Schema.astro';
 import PageSchema from '../components/PageSchema.astro';
 import JSONLD from '../components/JsonLd.astro';
-// Get the page's frontmatter from Astro.props
-const { frontmatter } = Astro.props;
+import siteDefaults from '../data/siteData.json';
 
-// Get the page's URL from Astro.url
-const url = Astro.url;
+/*export interface Props {
+    title: string;
+    description: string;
+    keywords: string[];
+    author: string;
+    canonical?: string;
+    // Additional props can be defined here
+}*/
 
+//type Props = CollectionEntry<'blog'>['data'];
+const { title } = Astro.props;
+
+const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
+const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.url);
+const siteURL = new URL("/", Astro.url);
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<AstroSeo slot="head" {...Astro.props} />
+		<title>{title}</title>
+		<slot name="structured-data" />
+
+		{pwaAssetsHead.links.map(link => <link {...link} />)}
+    	{pwaAssetsHead.themeColor && <meta name="theme-color" content={pwaAssetsHead.themeColor.content} />}
+    	{pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+		<script>
+  			import { registerSW } from 'virtual:pwa-register';
+			registerSW({ immediate: true });
+		</script>
+		<AstroSeoInfo slot="head" {...Astro.props} />
 		<Schema slot="head" {...Astro.props} />
 		<PageSchema slot="head" {...Astro.props} />
 		<Fragment slot="head">
-			<JSONLD frontmatter={frontmatter} url={url} />
+			<JSONLD frontmatter={seo} url={canonicalURL} />
 		</Fragment>
 
 		<meta charset="UTF-8" />

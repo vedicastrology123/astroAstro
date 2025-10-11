@@ -7,8 +7,10 @@ import Menu from '../components/Menu.astro';
 import ScrollContainer from '../components/ScrollContainer.astro';
 import Announcements from '../components/Announcements.astro';
 import Footer from '../components/Footer.astro';
+import { pwaAssetsHead } from 'virtual:pwa-assets/head';
+import { pwaInfo } from 'virtual:pwa-info';
 
-import AstroSeo from '../components/AstroSeo.astro';
+import AstroSeoInfo from '../components/AstroSeoInfo.astro';
 import Schema from '../components/Schema.astro';
 import PageSchema from '../components/PageSchema.astro';
 
@@ -25,7 +27,14 @@ const url = Astro.url;
 <!doctype html>
 <html lang="en">
 	<head>
-		<AstroSeo slot="head" {...Astro.props} />
+		{pwaAssetsHead.links.map(link => <link {...link} />)}
+    	{pwaAssetsHead.themeColor && <meta name="theme-color" content={pwaAssetsHead.themeColor.content} />}
+    	{pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+		<script>
+  			import { registerSW } from 'virtual:pwa-register';
+			registerSW({ immediate: true });
+		</script>
+		<AstroSeoInfo slot="head" {...Astro.props} />
 		<Schema slot="head" {...Astro.props} />
 		<PageSchema slot="head" {...Astro.props} />
 		<Fragment slot="head">
@@ -51,12 +60,6 @@ const url = Astro.url;
 		<script type="module" src="/node_modules/@ionic/core/dist/ionic/ionic.esm.js"></script>
 		<script nomodule src="/node_modules/@ionic/core/dist/ionic/ionic.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-		<script>
-		document.getElementById('hamburger').addEventListener('click', () => {
-			document.getElementById('nav').classList.toggle('hidden');
-		});
-		</script>
-		<link rel="sitemap" href="/sitemap-index.xml" />
 	</head>
 	<body>
 		<ion-app>

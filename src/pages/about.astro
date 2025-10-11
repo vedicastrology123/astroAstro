@@ -4,10 +4,26 @@ import background from '../assets/background.svg';
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Announcements from '../components/Announcements.astro';
+import StructuredData from '../components/StructuredData.astro';
+
+const pageTitle = "About Us";
+const pageDescription = "Welcome to Vedic Astrology website!";
+const pageKeywords = ["key", "words"];
+
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	name: pageTitle,
+	description: pageDescription,
+	url: new URL(Astro.url.pathname, Astro.site),
+};
 
 ---
 
-<Layout>
+<Layout title={pageTitle} >
+	<Fragment slot="structured-data">
+        <StructuredData structuredData={structuredData} />
+    </Fragment>
 	<div id="container">
 		<img id="background" src={background.src} alt="" fetchpriority="high" />
 		<main>
