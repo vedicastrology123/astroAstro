@@ -11,6 +11,12 @@ import Footer from '../components/Footer.astro';
 import AstroSeo from '../components/AstroSeo.astro';
 import Schema from '../components/Schema.astro';
 import PageSchema from '../components/PageSchema.astro';
+import JSONLD from '../components/JsonLd.astro';
+// Get the page's frontmatter from Astro.props
+const { frontmatter } = Astro.props;
+
+// Get the page's URL from Astro.url
+const url = Astro.url;
 
 ---
 

@@ -1,16 +1,24 @@
 ---
 import type { MarkdownInstance } from "astro";
+import type { arrayOutputType } from "astro:schema";
 
 // Define a type for your blog post frontmatter.
 interface Frontmatter {
   title: string;
   description: string;
   author: string;
-  date: Date;
-  image: {
-    src: string;
-    alt: string;
-  }
+  date: string;
+  information: string;
+  lead: string;
+  lastmod: string;
+  type: string;
+  categories: Array<string>;
+  tags: Array<string>;
+  keywords: Array<string>;
+  image: string;
+  path: Array<string>;
+  news_keywords: Array<string>;
+  article: Array<string>;
 }
 
 // Accept props and define their types.
@@ -26,14 +34,14 @@ const schema = {
   "headline": frontmatter.title,
   "description": frontmatter.description,
   "datePublished": frontmatter.date,
+  "keywords": frontmatter.keywords.join(', '),
   "author": {
     "@type": "Person",
     "name": frontmatter.author,
   },
   "image": {
     "@type": "ImageObject",
-    "url": new URL(frontmatter.image.src, Astro.site),
-    "caption": frontmatter.image.alt,
+    "url": new URL(frontmatter.image, Astro.site),
   },
   "url": new URL(url.pathname, Astro.site),
 };
