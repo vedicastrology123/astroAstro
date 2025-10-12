@@ -1,24 +1,9 @@
 ---
-import siteData from '../data/siteData.json';
 import { AstroSeo } from '@astrolib/seo';
 import siteDefaults from '../data/siteData.json';
-import type { CollectionEntry } from 'astro:content';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.url);
 const siteURL = new URL("/", Astro.url);
-const webSiteSchema = new URL("/#/schema/WebSite", Astro.url);
-const personSchema = new URL("/#/schema/Person/stevehora", Astro.url);
-
-export interface Props {
-    title: string;
-    description: string;
-    keywords?: string[];
-    author: string;
-    canonical?: string;
-    // Additional props can be defined here
-}
-
-type Props = CollectionEntry<'blog'>['data'];
 
 const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
 const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
