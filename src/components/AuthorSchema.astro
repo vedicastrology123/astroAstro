@@ -1,9 +1,6 @@
 ---
-import siteData from '../data/siteData.json';
 import { Schema } from 'astro-seo-schema';
 import siteDefaults from '../data/siteData.json';
-
-type Props = CollectionEntry<'blog'>['data'];
 
 const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
 const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
@@ -15,9 +12,11 @@ const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: seo.contact.name,
-    knowsAbout: ['Vedic Astrology', 'Horoscope Predictions', 'Mundane Wordly Predictions'],
-    "birthDate": "1970-03-25",
-    "westernzodiacSign": "Aries",
-    "vedicmoonSign": "Vrishabha"
+    website: seo.contact.website,
+    email: seo.contact.email,
+    knowsAbout: seo.contact.knowsAbout,
+    birthDate: seo.contact.birthDate,
+    westernzodiacSign: seo.contact.westernzodiacSign,
+    vedicmoonSign: seo.contact.vedicmoonSign
   }}
 />

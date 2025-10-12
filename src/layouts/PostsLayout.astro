@@ -11,7 +11,7 @@ import { pwaAssetsHead } from 'virtual:pwa-assets/head';
 import { pwaInfo } from 'virtual:pwa-info';
 
 import AstroSeoInfo from '../components/AstroSeoInfo.astro';
-import Schema from '../components/Schema.astro';
+import AuthorSchema from '../components/AuthorSchema.astro';
 import PageSchema from '../components/PageSchema.astro';
 
 import JSONLD from "../components/JsonLd.astro";
@@ -35,7 +35,7 @@ const url = Astro.url;
 			registerSW({ immediate: true });
 		</script>
 		<AstroSeoInfo slot="head" {...Astro.props} />
-		<Schema slot="head" {...Astro.props} />
+		<AuthorSchema slot="head" {...Astro.props} />
 		<PageSchema slot="head" {...Astro.props} />
 		<Fragment slot="head">
 			<JSONLD frontmatter={frontmatter} url={url} />

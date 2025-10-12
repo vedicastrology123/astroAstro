@@ -7,8 +7,8 @@ import Announcements from '../components/Announcements.astro';
 import StructuredData from '../components/StructuredData.astro';
 
 const pageTitle = "About Us";
-const pageDescription = "Welcome to Vedic Astrology website!";
-const pageKeywords = ["key", "words"];
+const pageDescription = "Welcome to Vedic Astrology website by Steve Hora!";
+const pageKeywords = ["Steve Hora", "Vedic Astrologer", "Horoscope Predictions", "Mundane Wordly Predictions"];
 
 const structuredData = {
 	"@context": "https://schema.org",
@@ -16,6 +16,7 @@ const structuredData = {
 	name: pageTitle,
 	description: pageDescription,
 	url: new URL(Astro.url.pathname, Astro.site),
+	keywords: pageKeywords
 };
 
 ---

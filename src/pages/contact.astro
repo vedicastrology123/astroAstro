@@ -4,11 +4,30 @@ import background from '../assets/background.svg';
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Announcements from '../components/Announcements.astro';
-import SiteData from "../data/siteData.json";
+import StructuredData from '../components/StructuredData.astro';
 
+const pageTitle = "Contact Us";
+const pageDescription = "Contact information of Steve Hora, Vedic Astrologer!";
+const pageKeywords = ["Steve Hora", "Vedic Astrologer", "vedicastrology123@gmail.com", "www.stevehora.com"];
+const pageWebsite = "www.stevehora.com";
+const pageEmail = "vedicastrology123@gmail.com";
+
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	name: pageTitle,
+	description: pageDescription,
+	url: new URL(Astro.url.pathname, Astro.site),
+	keywords: pageKeywords,
+	website: pageWebsite,
+	email: pageEmail
+};
 ---
 
-<Layout>
+<Layout title={pageTitle} >
+	<Fragment slot="structured-data">
+        <StructuredData structuredData={structuredData} />
+    </Fragment>
 	<div id="container">
 		<img id="background" src={background.src} alt="" fetchpriority="high" />
 		<main>
