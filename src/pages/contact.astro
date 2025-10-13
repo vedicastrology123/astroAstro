@@ -1,8 +1,8 @@
 ---
-import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
+import siteData from "../data/metadata.json";
 import Announcements from '../components/Announcements.astro';
 import StructuredData from '../components/StructuredData.astro';
 
@@ -11,42 +11,39 @@ const pageDescription = "Contact information of Steve Hora, Vedic Astrologer!";
 const pageKeywords = ["Steve Hora", "Vedic Astrologer", "vedicastrology123@gmail.com", "www.stevehora.com"];
 const pageWebsite = "www.stevehora.com";
 const pageEmail = "vedicastrology123@gmail.com";
+const pageUrl = pageWebsite + siteData;
+
+const seoOverrides = {
+  title: pageTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+  url: pageUrl,
+  email: pageEmail
+};
 
 const structuredData = {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
 	name: pageTitle,
 	description: pageDescription,
-	url: new URL(Astro.url.pathname, Astro.site),
+	url: new URL(siteData.menu.url4, Astro.site), 
 	keywords: pageKeywords,
 	website: pageWebsite,
 	email: pageEmail
 };
+
 ---
 
-<Layout title={pageTitle} >
+<Layout {...seoOverrides}>
 	<Fragment slot="structured-data">
         <StructuredData structuredData={structuredData} />
     </Fragment>
-	<div id="container">
-		<img id="background" src={background.src} alt="" fetchpriority="high" />
-		<main>
-			<section id="hero">
-				<ion-text color="primary">
-					<h1>Contact Us</h1>
-				</ion-text>
-
-				<ion-router-link href="mailto:vedicastrlogy123@gmail.com"><u>Email of Steve Hora</u>, Vedic Astrology Expert</ion-router-link>
-				<br>
-				<section id="links">
-				<ion-text color="dark">
-					<p><ion-router-link href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0"><u>Whatsapp</u> Chat</ion-router-link></p>
-					<br>
-					<ion-router-link href="hhttps://chat.arattai.in/groups/j43545f313239303430363134313434313835363839315f32303030363635363837322d47437c3031303131323034333234353137353935373138353436383830">Join our <u>Arattai App Group</u></ion-router-link>
-					</ion-text>
-				</section>
-			</section>
-		</main>
-		<Announcements />
-	</div>
+		<ion-text color="secondary">
+			<h1>Contact Us</h1>
+		</ion-text>
+		<section>
+			<p><ion-router-link  color="medium" href="mailto:vedicastrlogy123@gmail.com">Email - Steve Hora, Vedic Astrology Expert.</ion-router-link></p>
+			<p><ion-router-link  color="medium" href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0" target="_blank">Chat on Whatsapp.</ion-router-link></p>
+			<p><ion-router-link  color="medium" href="hhttps://chat.arattai.in/groups/j43545f313239303430363134313434313835363839315f32303030363635363837322d47437c3031303131323034333234353137353935373138353436383830" target="_blank">Join our Arattai App Group.</ion-router-link></p>
+		</section>
 </Layout>

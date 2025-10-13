@@ -14,7 +14,7 @@ tags:
   - "Birth Chart Predictions"
   - "Mundane Predictions"
 path:
-  - "https://stevehora.com/calculate-your-vedic-astrology-chart/"
+  - "https://play.google.com/store/apps/details?id=com.stevehora.com.astrogram"
 keywords:
   - "Vedic Astrology Birth Chart"
   - "Free Birth Chart"
@@ -62,13 +62,13 @@ article:
 
 Birth chart is based on your accurate Date of Birth, Time and Place of Birth.
 
-If you want **a very detailed and professional** birth chart, reach us at  **https://stevehora.substack.com/**.
+If you want **a very detailed and professional** birth chart, use this [Android App](https://play.google.com/store/apps/details?id=com.stevehora.com.astrogram) , to make one.
 
 It will look like below.
 
 
 
-<img src="/src/static/images/birth-chart.png" alt="A sample Vedic Astrology Birth Chart" width="400" height="500">
+<img src="/src/static/images/Birth-Vedic-Horoscope.jpg" alt="A sample Vedic Astrology Birth Chart" width="400" height="500">
 
 A **pdf version** of your birth chart, can also be made available.
 
@@ -80,7 +80,7 @@ using **Sidereal** solar years of 360, and **Vimshottari Dasha** Timing system.
 To predict life events, your birth horoscope will be read as per **Parasara system** and Timing
 using Vimshottari Dasha system and Samaya Amsa or Kaala timing technique.
 
-To know more about how our Astrologers read a birth chart, [read this blog, ](/articles/birth-chart/)
+To know more about how our Astrologers read a birth chart, [read this blog, ](/articles/services/)
  
 #### Know more from books
 

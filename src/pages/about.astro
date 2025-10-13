@@ -1,46 +1,84 @@
 ---
-import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Announcements from '../components/Announcements.astro';
 import StructuredData from '../components/StructuredData.astro';
+import siteData from "../data/metadata.json";
 
 const pageTitle = "About Us";
 const pageDescription = "Welcome to Vedic Astrology website by Steve Hora!";
 const pageKeywords = ["Steve Hora", "Vedic Astrologer", "Horoscope Predictions", "Mundane Wordly Predictions"];
+const pageWebsite = "www.stevehora.com";
+const pageEmail = "vedicastrology123@gmail.com";
+const pageUrl = pageWebsite + siteData;
+
+const seoOverrides = {
+  title: pageTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+  url: pageUrl,
+  email: pageEmail
+};
 
 const structuredData = {
 	"@context": "https://schema.org",
 	"@type": "WebPage",
 	name: pageTitle,
 	description: pageDescription,
-	url: new URL(Astro.url.pathname, Astro.site),
-	keywords: pageKeywords
+	url: new URL(siteData.menu.url3, Astro.site), 
+	keywords: pageKeywords,
+	website: pageWebsite,
+	email: pageEmail
 };
 
 ---
 
-<Layout title={pageTitle} >
+<Layout {...seoOverrides}>
 	<Fragment slot="structured-data">
         <StructuredData structuredData={structuredData} />
     </Fragment>
-	<div id="container">
-		<img id="background" src={background.src} alt="" fetchpriority="high" />
-		<main>
-			<section id="hero">
-				<ion-text color="primary">
-					<h1>About Us</h1>
-				</ion-text>
-					<ion-router-link href="https://stevehora.com">Vedic Astrology by Steve Hora, Vedic Astrology Expert</ion-router-link>
-				<ion-text color="dark">
-					<p>Vedic Astrologer</p>
-				</ion-text>
-				<section id="links">
-					<p><ion-router-link href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0">Chat with Steve Hora, Vedic Astrologer</ion-router-link></p>
-					<ion-router-link href="hhttps://chat.arattai.in/groups/j43545f313239303430363134313434313835363839315f32303030363635363837322d47437c3031303131323034333234353137353935373138353436383830">Join our Arattai App Group</ion-router-link>
-				</section>
-			</section>
-		</main>
-	</div>
+	<ion-text color="secondary">
+		<h1>About Us</h1>
+	</ion-text>
+	<p><ion-router-link color="medium" href="https://stevehora.com">Vedic Astrology by Steve Hora</ion-router-link></p>
+	<p><ion-router-link color="medium" href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0" target="_blank">Chat with Steve Hora</ion-router-link></p>
+	<p><ion-router-link color="medium" href="https://chat.arattai.in/groups/j43545f313239303430363134313434313835363839315f32303030363635363837322d47437c3031303131323034333234353137353935373138353436383830" target="_blank">Join our Arattai App Group</ion-router-link></p>
+
+	<ion-text color="secondary">
+		<h1>About Steve Hora, Vedic Astrology Expert</h1>
+	</ion-text>
+	<ion-text color="light"></ion-text>
+		<p>A born astrologer, as per Sri [Vaithiswara Agasthiya Koushiha Nadi Grantha in Tamil](/articles/nadi-astrology/).
+		In the palm-leaf reading, one of my professions are mentioned as below
+		</p>
+		<p>“ஜோதிடமும் கலை சார் அணி பண்டம் ….”
+
+		<p>It means Astrology, Graphical Yantras are some of my professions.
+
+		<p>I use Vedic (Sidereal) horoscope for Accurate timing and analysis, according to True Lahiri Ayanamsa (Chitra paksha), using sidereal solar years of 360, Horoscope Analysis is as per Parasara system and Timing using Vimshottari Dasha system and Samaya Amsa or Kaala or Naadi timing technique.</p>
+
+		<p>Astrologically, I love to analyze Vedic (Sidereal) or Western (Tropical) Astrology, comprehend it and solve the unresolved question of human existence, in its various aspects, events, tribulation and the very ending.</p>
+
+		<p>(This quality of mine is due to 5th lord Shukra sitting in 4th, and looking at 10th, Ketu is with Shani in Makara lagna. Shukra being my Yogakaraka graha, sitting in Aswini Ketu-nakshatra, in my horoscope).</p>
+
+		<p>I challenge the status quo, ad-literam and anecdotal of vedic and western astrology, navigate uncharted waters, to find newer vistas from the astrology lore and find the truth. Be unbiased, even with his own opinion, or by the very information gathered, than to assimilate, digest, critically analyze, synthesize and find the truest path, which had been lost to time.</p>
+
+		<p>(This quality of mine is due to Chandra exalted in Vrishabha and Makara Lagna Shani and Ketu sitting in Abhijit nakshatra, in my horoscope).</p>
+
+		<p>Astrological Quote
+
+		<p>ஞாலங் கருதினுங் கைகூடுங் காலம் கருதி இடத்தாற் செயின்</p>
+
+		<p>Choose proper time and place and act, even the world, you will win with ease.</p>
+
+		<p>--- from Thirukural (484 couplet) by Tamil Saint ThiruValluvar (1st century BC)</p>
+	</ion-text>
+	<ion-text color="secondary">
+		<h1>References</h1>
+	</ion-text>
+	<section>
+		<p><ion-router-link color="medium" href="https://www.quora.com/profile/Steve-Hora">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
+		<p><ion-router-link color="medium" href="https://stevehora.substack.com/" target="_blank">Substack blog</ion-router-link></p>
+	</section>
 </Layout>

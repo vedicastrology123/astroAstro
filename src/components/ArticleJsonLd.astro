@@ -27,6 +27,8 @@ const { frontmatter, url } = Astro.props as {
   url: URL;
 };
 
+const imageUrl = Astro.site + frontmatter.image;
+
 // Create the JSON-LD schema using the frontmatter data.
 const schema = {
   "@context": "https://schema.org",
@@ -41,7 +43,7 @@ const schema = {
   },
   "image": {
     "@type": "ImageObject",
-    "url": new URL(frontmatter.image, Astro.site),
+    "url": new URL(imageUrl),
   },
   "url": new URL(url.pathname, Astro.site),
 };

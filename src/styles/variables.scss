@@ -11,3 +11,11 @@
     // :root {
     //     --ion-padding: 120px;
     // }
+    /* In your .scss file (e.g., home.page.scss) */
+    .custom-item-background {
+        --ion-item-background: rgb(45, 45, 45);; /* Sets a light orange background */
+    }
+
+    .custom-list-background {
+        background-color: rgb(45, 45, 45); /* Sets a light green background for the entire list */
+    }

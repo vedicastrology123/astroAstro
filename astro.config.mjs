@@ -3,8 +3,13 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import AstroPWA from "@vite-pwa/astro";
 
+import { targetBlank } from './src/plugins/targetBlank';
+
 export default defineConfig({
   // ...
+    markdown: {
+    rehypePlugins: [[targetBlank, { domain: 'localhost:4321' }]],
+  },
   compressHTML: false,
   site: 'http://localhost:4321',
   integrations: [sitemap(),
