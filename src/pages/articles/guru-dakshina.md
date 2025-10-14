@@ -2,6 +2,7 @@
 layout: ../../layouts/PostsLayout.astro
 information: "Expert Vedic Astrologer"
 date: "2020-04-07T12:52:36+06:00"
+type: "post"
 title: "Guru Dakshina"
 descslug: "What is Guru Dakshina?"
 image: "images/success.jpg"
@@ -18,6 +19,9 @@ path:
   - "https://stevehora.com/articles/guru-dakshina/"
 keywords:
   - "Guru Dakshina"
+news_keywords:
+  - "Vedic Astrology"
+  - "Steve Hora"
 ---
 
 ### Guru Dakshina - Payments

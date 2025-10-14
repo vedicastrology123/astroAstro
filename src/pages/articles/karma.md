@@ -3,6 +3,7 @@ layout: ../../layouts/PostsLayout.astro
 information: "Expert Vedic Astrologer"
 date: "2020-04-07T12:52:36+06:00"
 title: "Karma and Astrology"
+type: "post"
 descslug: "Can you analyze my horoscope? Most of the astrologer's predictions didn't come true for me."
 image: "images/karma.png"
 author: Steve Hora
