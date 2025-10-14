@@ -1,23 +1,94 @@
 ---
 import '../styles/variables.scss';
 import siteData from '../data/metadata.json';
+import '../styles/variables.scss';
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import StructuredData from '../components/StructuredData.astro';
 
-const allPosts = Object.values(import.meta.glob('../pages/articles/*.md', { eager: true }));
+const pageTitle = "All Astrological Articles";
+const pageDescription = "Welcome to Vedic Astrology website by Steve Hora!";
+const pageKeywords = ["Steve Hora", "Vedic Astrologer", "Horoscope Predictions", "Mundane Wordly Predictions"];
+const pageWebsite = "www.stevehora.com";
+const pageEmail = "vedicastrology123@gmail.com";
+const pageUrl = pageWebsite + siteData.menu.menu7;
+
+const seoOverrides = {
+  title: pageTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+  url: pageUrl,
+  email: pageEmail
+};
+
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	name: pageTitle,
+	description: pageDescription,
+	url: new URL(siteData.menu.menu7, Astro.site), 
+	keywords: pageKeywords,
+	website: pageWebsite,
+	email: pageEmail
+};
+
+// An array of slugs to exclude.
+const excludedSlugs = ['refunds', 'shipping', 'privacy', 'services', 'testimonials', 'vedic-chart', 'vedic-astrology-books', 'marriage-compatibility'];
+
+const allArticles = await getCollection('articles', ({ id }) => {
+  return !excludedSlugs.includes(id);
+});
 
 ---
-<style is:global>
-  ion-menu {
-    --ion-background-color: #333; /* Dark gray */
-  }
-  ion-toolbar {
-    --background: #4077cfff; /* Your desired background color */
-  }
-</style>
 
-{Object.entries(allPosts).map(([slug, post]) => (
-    <ion-list lines="none" class="custom-list-background">
-    <ion-item class="custom-item-background">
-        <ion-label><a href={post.url}>{post.frontmatter.title}</a></ion-label>
-    </ion-item>
-    </ion-list>
-))}
+<Layout {...seoOverrides}>
+	<Fragment slot="structured-data">
+        <StructuredData structuredData={structuredData} />
+    </Fragment>
+	<ion-text color="secondary">
+		<h1>All Astrological Articles</h1>
+	</ion-text>
+  <ul>
+    {allArticles.map((post) => (
+      <li><a href={`/articles/${post.id}`}>{post.data.title}</a></li>
+    ))}
+  </ul>
+
+	<ion-text color="secondary">
+		<h1>References</h1>
+	</ion-text>
+	<section>
+		<p><ion-router-link color="medium" href="https://www.quora.com/profile/Steve-Hora">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
+		<p><ion-router-link color="medium" href="https://stevehora.substack.com/" target="_blank">Substack blog</ion-router-link></p>
+	</section>
+	<p><ion-router-link class="custom-center-label custom-footer-label" color="medium" href="/about/" target="_blank">{siteData.copyright}</ion-router-link>.</p>
+</Layout>
+
+<style>
+  /* In your variables.scss or a component's scss */
+    ion-content.ion-padding {
+        --ion-padding: 25px; /* Adjust as needed */
+    }
+
+    ion-row {
+        height: 100%; /* Or use a relative unit like vh */
+        //align-items: stretch; /* This is the default, but good to be explicit */
+    }
+
+    /* In your .scss file (e.g., home.page.scss) */
+    .custom-item-background {
+        --ion-item-background: #0e0e0e; /* Sets a light orange background */
+    }
+
+    .custom-list-background {
+        background-color: #0e0e0e; /* Sets a light green background for the entire list */
+    }
+
+    ul li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+</style>

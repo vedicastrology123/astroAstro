@@ -5,7 +5,7 @@ import siteData from '../data/metadata.json';
 const allPosts = Object.values(import.meta.glob('../pages/articles/*.md', { eager: true }));
 
 ---
-<style is:global>
+<style>
   ion-menu {
     --ion-background-color: #333; /* Dark gray */
   }
@@ -17,7 +17,7 @@ const allPosts = Object.values(import.meta.glob('../pages/articles/*.md', { eage
 <ion-menu side="start" content-id="main-content">
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title>Astrology Articles</ion-title>
+      <ion-title>Vedic Astrology Info</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
@@ -41,6 +41,9 @@ const allPosts = Object.values(import.meta.glob('../pages/articles/*.md', { eage
       </ion-item>
       <ion-item class="custom-item-background">
         <ion-label><a href={siteData.menu.menu12}  target="_blank">Birth Chart Predictions</a></ion-label>
+      </ion-item>
+      <ion-item class="custom-item-background">
+        <ion-label><a href={siteData.menu.menu14}  target="_blank">Testimonials</a></ion-label>
       </ion-item>
     </ion-list>
   </ion-content>
