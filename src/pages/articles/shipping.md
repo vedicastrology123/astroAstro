@@ -2,7 +2,8 @@
 layout: ../../layouts/PostsLayout.astro
 title: "Shipping Policy"
 descslug: "Our Shipping Policy"
-date: 2020-04-07T12:52:36+06:00
+date: "2020-04-07T12:52:36+06:00"
+type: "Webpage"
 image: "images/success.jpg"
 author: Steve Hora
 description : "Prompt"
@@ -15,6 +16,11 @@ lead: Vedic Astrology by Steve Hora
 lastmod: latest 
 path:
   - "https://stevehora.com/articles/shipping-policy/"
+
+information: "Expert Vedic Astrologer"
+news_keywords:
+  - "Vedic Astrology"
+  - "Steve Hora"
 
 ---
 

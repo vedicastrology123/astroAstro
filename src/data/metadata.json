@@ -4,6 +4,15 @@
     "menu2": "Aries - AI Astrology GPT",
     "menu3": "about",
     "menu4": "contact",
+    "menu5": "/articles/privacy",
+    "menu6": "/articles/refunds",
+    "menu7": "/all-articles",
+    "menu8": "/articles/services",
+    "menu9": "/articles/marriage-compatibility",
+    "menu10": "/articles/vedic-astrology-books",
+    "menu11": "/articles/vedic-chart",
+    "menu12": "https://docs.google.com/forms/d/e/1FAIpQLSf2SIxzRL87dW-pwnVLh5Q484ou7vLD1Yx-cKBLD7iXQvR3_g/viewform?pli=1",
+    "menu13": "/articles/shipping",
     "url1": "/",
     "url2": "https://www.perplexity.ai/spaces/aries-ai-for-vedic-astrology-kOxuPwkJSryXna5VY_lr_Q#0",
     "url3": "/about",
@@ -13,6 +22,7 @@
     "icon3": "accessibility-outline",
     "icon4": "qr-code-outline"
   },
+  "copyright": "Copyright © 2014-2030 - stevehora.com - All Rights Reserved",
   "author": {
     "name": "Steve Hora",
     "email": "vedicastrology123@gmail.com",

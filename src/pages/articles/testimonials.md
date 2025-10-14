@@ -2,8 +2,9 @@
 layout: ../../layouts/PostsLayout.astro
 title: "Testimonials"
 descslug: "Testimonials of our service."
-date: 2020-04-07T12:52:36+06:00
+date: "2020-04-07T12:52:36+06:00"
 image: "images/success.jpg"
+type: "Webpage"
 author: Steve Hora
 description : "Top Reviews"
 categories: 
@@ -19,6 +20,11 @@ keywords:
   - "Accurate Predictions"
   - "Timing"
   - "Testimonials"
+
+information: "Expert Vedic Astrologer"
+news_keywords:
+  - "Vedic Astrology"
+  - "Steve Hora"
 ---
 
 ### Testimonials

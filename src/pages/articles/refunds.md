@@ -2,8 +2,9 @@
 layout: ../../layouts/PostsLayout.astro
 title: "Refund Policy"
 descslug: "Refund Policy"
-date: 2020-04-07T12:52:36+06:00
+date: "2020-04-07T12:52:36+06:00"
 image: "images/success.jpg"
+type: "Webpage"
 author: Steve Hora
 description : "Our commitment"
 categories: 
@@ -15,6 +16,11 @@ lead: Vedic Astrology by Steve Hora
 lastmod: latest 
 path:
   - "https://stevehora.com/articles/refunds/"
+
+information: "Expert Vedic Astrologer"
+news_keywords:
+  - "Vedic Astrology"
+  - "Steve Hora"
 
 ---
 

@@ -199,3 +199,12 @@ p {
     margin-bottom: 1em; /* Adjust spacing between paragraphs */
     max-width: 80ch;
 }
+
+/* In src/styles/global.css or a <style is:global> tag */
+a {
+  text-decoration: none; /* Removes underline from all links by default */
+}
+
+a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}

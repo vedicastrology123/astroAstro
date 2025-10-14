@@ -1,5 +1,6 @@
 ---
 import '../styles/variables.scss';
+import siteData from '../data/metadata.json';
 
 const allPosts = Object.values(import.meta.glob('../pages/articles/*.md', { eager: true }));
 
@@ -20,15 +21,42 @@ const allPosts = Object.values(import.meta.glob('../pages/articles/*.md', { eage
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    <!-- Menu content goes here -->
-  {Object.entries(allPosts).map(([slug, post]) => (
-    <ion-list class="custom-list-background">
+      <!-- Menu content goes here -->
+
+    <ion-list lines="none" class="custom-list-background">
       <ion-item class="custom-item-background">
-        <ion-label><a href={post.url}>{post.frontmatter.title}</a></ion-label>
+        <ion-label><a href={siteData.menu.menu7}>All Astrological Articles</a></ion-label>
+      </ion-item>
+      <ion-item class="custom-item-background">
+        <ion-label><a href={siteData.menu.menu8}>Astrological Services</a></ion-label>
+      </ion-item>   
+      <ion-item class="custom-item-background">
+        <ion-label><a href={siteData.menu.menu9}>Matrimonial Compatibility</a></ion-label>
+      </ion-item>
+      <ion-item class="custom-item-background">
+        <ion-label><a href={siteData.menu.menu10}>Vedic Astrology Books</a></ion-label>
+      </ion-item>
+      <ion-item class="custom-item-background">
+        <ion-label><a href={siteData.menu.menu11}>Birth Horoscope</a></ion-label>
+      </ion-item>
+      <ion-item class="custom-item-background">
+        <ion-label><a href={siteData.menu.menu12}  target="_blank">Birth Chart Predictions</a></ion-label>
       </ion-item>
     </ion-list>
-  ))}
   </ion-content>
+
+  <ion-footer>
+    <ion-list lines="none" class="custom-list-background">
+      <ion-item class="custom-item-background custom-footer-label custom-center-item">
+        <ion-label class="custom-center-label"><a href={siteData.menu.menu5}>Terms & Privacy</a>.</ion-label></ion-item>
+      <ion-item class="custom-item-background custom-footer-label custom-center-item">  
+        <ion-label class="custom-center-label"><a href={siteData.menu.menu6}>Refund and </a><a href={siteData.menu.menu13}>Shipping Policy</a>.</ion-label>
+      </ion-item>
+      <ion-item class="custom-item-background custom-footer-label custom-center-item">
+        <ion-label class="custom-center-label"><a href={"/" + siteData.menu.menu3}>{siteData.copyright}</a>.</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-footer>
 </ion-menu>
 
 <ion-router-outlet id="main-content"></ion-router-outlet>

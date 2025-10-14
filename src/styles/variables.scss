@@ -13,9 +13,39 @@
     // }
     /* In your .scss file (e.g., home.page.scss) */
     .custom-item-background {
-        --ion-item-background: rgb(45, 45, 45);; /* Sets a light orange background */
+        --ion-item-background: #333333; /* Sets a light orange background */
     }
 
     .custom-list-background {
-        background-color: rgb(45, 45, 45); /* Sets a light green background for the entire list */
+        background-color: #333333; /* Sets a light green background for the entire list */
     }
+    .custom-footer-label {
+        font-size: 0.75em;
+    }
+    ion-item a {
+      text-decoration: none;
+    }
+    .custom-center-item {
+        display: flex; // Enable Flexbox for the ion-item
+        align-items: auto; // Vertically center content
+        justify-content: auto; // Horizontally center content
+        height: 2.0em;
+
+        // You might need to adjust styles for specific child elements
+        // For example, if you have an ion-label inside
+        .custom-center-label {
+            text-align: auto; // Center text within the label
+            width: 100%; // Ensure the label takes full width to allow text-align to work
+        }
+    }
+    ion-menu {
+    // Set a custom width for the menu
+    --width: 360px;
+
+    // For a full-height menu, you can set the height to 100%
+    --height: 736px;
+
+    // You can also use other custom properties for more control
+    --min-width: 250px;
+    --max-width: 360px;
+  }

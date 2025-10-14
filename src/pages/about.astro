@@ -1,5 +1,6 @@
 ---
 import background from '../assets/background.svg';
+import '../styles/variables.scss';
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
 import Announcements from '../components/Announcements.astro';
@@ -81,4 +82,5 @@ const structuredData = {
 		<p><ion-router-link color="medium" href="https://www.quora.com/profile/Steve-Hora">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
 		<p><ion-router-link color="medium" href="https://stevehora.substack.com/" target="_blank">Substack blog</ion-router-link></p>
 	</section>
+	<p><ion-router-link class="custom-center-label custom-footer-label" color="medium" href="/about/" target="_blank">{siteData.copyright}</ion-router-link>.</p>
 </Layout>

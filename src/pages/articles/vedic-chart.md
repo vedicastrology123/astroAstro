@@ -7,7 +7,7 @@ description: "Vedic Horoscope"
 information: "Expert Vedic Astrologer"
 image: "images/banner.jpg"
 author: "Steve Hora"
-type: "main"
+type: "Article"
 categories: 
   - "Vedic Astrology"
 tags:

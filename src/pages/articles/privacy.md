@@ -2,8 +2,9 @@
 layout: ../../layouts/PostsLayout.astro
 title: "Privacy"
 descslug: "Privacy"
-date: 2020-04-07T12:52:36+06:00
+date: "2020-04-07T12:52:36+06:00"
 image: "images/success.jpg"
+type: "Webpage"
 author: Steve Hora
 description : "Trust us - WE DO NOT DISCLOSE any of your information."
 categories: 
@@ -17,6 +18,11 @@ path:
   - "https://stevehora.com/articles/privacy/"
 keywords:
   - "Privacy"
+
+information: "Expert Vedic Astrologer"
+news_keywords:
+  - "Vedic Astrology"
+  - "Steve Hora"
 ---
 
 ### Terms and Privacy Policy

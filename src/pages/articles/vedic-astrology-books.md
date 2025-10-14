@@ -6,8 +6,7 @@ date: "2020-04-07T12:52:36+06:00"
 image: "images/success.jpg"
 author: Steve Hora
 description : "Learn"
-information: "Expert Vedic Astrologer"
-type: "post"
+type: "Article"
 categories: 
   - "Vedic Astrology"
 tags:
@@ -18,7 +17,8 @@ lastmod: 2025-09-29T08:54:00+05:30
 keywords:
   - "Learn Astrology"
   - "Astrology Books"
-  
+
+information: "Expert Vedic Astrologer"
 news_keywords:
   - "Vedic Astrology"
   - "Steve Hora"

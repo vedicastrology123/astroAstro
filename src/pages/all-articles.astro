@@ -1,0 +1,23 @@
+---
+import '../styles/variables.scss';
+import siteData from '../data/metadata.json';
+
+const allPosts = Object.values(import.meta.glob('../pages/articles/*.md', { eager: true }));
+
+---
+<style is:global>
+  ion-menu {
+    --ion-background-color: #333; /* Dark gray */
+  }
+  ion-toolbar {
+    --background: #4077cfff; /* Your desired background color */
+  }
+</style>
+
+{Object.entries(allPosts).map(([slug, post]) => (
+    <ion-list lines="none" class="custom-list-background">
+    <ion-item class="custom-item-background">
+        <ion-label><a href={post.url}>{post.frontmatter.title}</a></ion-label>
+    </ion-item>
+    </ion-list>
+))}

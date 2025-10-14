@@ -6,9 +6,9 @@ image: "images/banner.jpg"
 author: Steve Hora
 information: "Expert Vedic Astrologer"
 description : "Expert Vedic Astrologers"
-type: "Website"
+type: "Webpage"
 path:
-  - "https://stevehora.com/posts/about-us/"
+  - "https://stevehora.com/articles/services/"
 categories: 
   - "Vedic Astrology"
 tags:
