@@ -9,12 +9,18 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.3.7",
+    "@astrojs/react": "^4.4.0",
     "@astrojs/sitemap": "^3.6.0",
     "@astrolib/seo": "^1.0.0-beta.8",
     "@ionic/core": "^8.7.5",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
     "astro": "^5.14.1",
     "astro-seo-schema": "^5.1.0",
     "ionicons": "^8.0.13",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "sass": "^1.93.2",
     "schema-dts": "^1.1.5"
   },

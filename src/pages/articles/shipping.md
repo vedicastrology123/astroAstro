@@ -22,6 +22,8 @@ news_keywords:
   - "Vedic Astrology"
   - "Steve Hora"
 
+keywords:
+  - "Shipping"
 ---
 
 ### Shipping Policy

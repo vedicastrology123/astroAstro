@@ -1,0 +1,100 @@
+{
+ "q2a1": {
+   "question": "Which sign is followed in western astrology?",
+   "answer": "2",
+   "choices": "Moon, Sun, None",
+   "correctAnswer": "Sun sign is followed in Western astrology. Western astrology is tropical and uses Sun sign for prediction purposes. Moon sign is not used by westrn astrology. It is not sidereal, which is Vedic astrology",
+   "relatedLink": "/"
+ },
+ "q2a2": {
+   "question": "What is meant by Rashi?",
+   "answer": "1",
+   "choices": "Moon sign in Vedic Astrology, Sun sign, None",
+   "correctAnswer": "Rashi is Moon sign in Vedic Astrology.",
+   "relatedLink": "/articles/rashi/"
+ },
+ "q2a3": {
+   "question": "Are there Telegram channels on Vedic Astrology?",
+   "answer": "1",
+   "choices": "Yes, No, Do not know",
+   "correctAnswer": "There are Telegram channels on Vedic Astrology.",
+   "relatedLink": "/articles/telegram/"
+ },
+ "q2a4": {
+   "question": "What is Tithi?",
+   "answer": "1",
+   "choices": "The waxing and waning of moon, Sun Sign, Moon sign",
+   "correctAnswer": "The waxing and waning of moon, measured in multiples of 12 degree of the zodiac arc.",
+   "relatedLink": "/articles/tithi-information/"
+ },
+ "q2a5": {
+   "question": "Who is the best author of books in Vedic Astrology?",
+   "answer": "2",
+   "choices": "B.V. Raman, Parasara",
+   "correctAnswer": "B.V. Raman books on Vedic Astrology are the best.",
+   "relatedLink": "/articles/vedic-astrology-books/"
+ },
+ "q2a6": {
+   "question": "What is the best Vedic Astrology software?",
+   "answer": "1",
+   "choices": "Jagannatha Hora, AstroSoft, Do not know",
+   "correctAnswer": "Jagannatha Hora is the best Vedic Astrology software.",
+   "relatedLink": "/articles/vedic-astrology-software/"
+ },
+ "q2a7": {
+   "question": "Does Hindu temple have astrological significance?",
+   "answer": "1",
+   "choices": "Yes, No, Do not know",
+   "correctAnswer": "Hindu temples have astrological significance.",
+   "relatedLink": "/articles/astrology-temple/"
+ },
+ "q2a8": {
+   "question": "What is Bhrigu Bindu used for?",
+   "answer": "1",
+   "choices": "Predictions, It is a Mantra, Do not Know",
+   "correctAnswer": "Bhrigu Bindu is used in prediction from a horoscope.",
+   "relatedLink": "/articles/bhrigu-bindu/"
+ },
+"q2a9": {
+   "question": "How to calculate a vedic astrology birth chart?",
+   "answer": "1",
+   "choices": "Astrology Software, Astronomy, Do not Know",
+   "correctAnswer": "Using an Astrology software one can calculate a vedic astrology birth chart.",
+   "relatedLink": "/articles/birth-chart/"
+ },
+"q2a10": {
+   "question": "What is meant by Dasha in Vedic Astrology?",
+   "answer": "1",
+   "choices": "Used for timing life events, It is a Mantra, Do not Know",
+   "correctAnswer": "Dasha in Vedic Astrology is used for timing life events.",
+   "relatedLink": "/articles/dasha/"
+ },
+"q2a11": {
+   "question": "Did W.D.Gann, Investor used Vedic Astrology for analysis of Stock Market?",
+   "answer": "1",
+   "choices": "Yes, No , Do not Know",
+   "correctAnswer": "His Square of Nine algorithm is connected to Vedic Astrology.",
+   "relatedLink": "/articles/gann-w-d/"
+ },
+"q2a12": {
+   "question": "What is a graha?",
+   "answer": "1",
+   "choices": "Planet, Star, Do not Know",
+   "correctAnswer": "Graha is a Planet in Vedic Astrology, from a geo-centric point of view. Sun and Moon are considered as Grahas.",
+   "relatedLink": "/articles/graha/"
+ },
+"q2a13": {
+   "question": "What is a nakshatra?",
+   "answer": "2",
+   "choices": "Planet, Star, Do not Know",
+   "correctAnswer": "Nakshatra is a star or a group of stars in Vedic Astrology.",
+   "relatedLink": "/articles/nakshatras/"
+ },
+"q2a14": {
+   "question": "Is Karma and Vedic Astrology connected?",
+   "answer": "2",
+   "choices": "No, Yes, Do not Know",
+   "correctAnswer": "Karma is What you sow is what you reap is Law of Karma and Dharma based on that is Vedic Astrology.",
+   "relatedLink": "/articles/karma-and-astrology/"
+ }
+}

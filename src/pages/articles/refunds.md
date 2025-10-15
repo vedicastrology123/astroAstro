@@ -22,6 +22,9 @@ news_keywords:
   - "Vedic Astrology"
   - "Steve Hora"
 
+keywords:
+  - "Refund"
+
 ---
 
 ### Refund and Cancellation Policy
