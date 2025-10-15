@@ -51,7 +51,7 @@ const allArticles = await getCollection('articles', ({ id }) => {
 	</ion-text>
   <ul>
     {allArticles.map((post) => (
-      <li><a href={`/articles/${post.id}`}>{post.data.title}</a> - <ion-text color="medium">{post.data.description}</ion-text></li>
+      <li><a href={`/articles/${post.id}`}>{post.data.title}</a> - <ion-text color="secondary">{post.data.description}</ion-text></li>
     ))}
   </ul>
 
@@ -59,10 +59,10 @@ const allArticles = await getCollection('articles', ({ id }) => {
 		<h1>References</h1>
 	</ion-text>
 	<section>
-		<p><ion-router-link color="medium" href="https://www.quora.com/profile/Steve-Hora">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
-		<p><ion-router-link color="medium" href="https://stevehora.substack.com/" target="_blank">Substack blog</ion-router-link></p>
+		<p><ion-router-link href="https://www.quora.com/profile/Steve-Hora">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
+		<p><ion-router-link href="https://stevehora.substack.com/" target="_blank">Substack blog</ion-router-link></p>
 	</section>
-	<p><ion-router-link class="custom-center-label custom-footer-label" color="medium" href="/about/" target="_blank">{siteData.copyright}</ion-router-link>.</p>
+	<p><ion-router-link class="custom-center-label custom-footer-label" href="/about/" target="_blank">{siteData.copyright}</ion-router-link>.</p>
 </Layout>
 
 <style>

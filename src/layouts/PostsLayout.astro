@@ -84,11 +84,22 @@ const url = Astro.url;
 	</body>
 </html>
 
-<style>
+<style is:global>
 	ion-content {
 	--padding-top: 20px;
 	--padding-bottom: 20px;
-	--padding-start: 25%; /* for left padding in LTR, right in RTL */
-	--padding-end: 75px;   /* for right padding in LTR, left in RTL */
+	--padding-start: 25%;
+	--padding-end: 75px;
+	}
+	.prose a {
+		color: #1a73e8;
+		text-decoration: none;
+		transition: color 0.3s ease, text-decoration 0.3s ease;
+	}
+
+	.prose a:hover,
+	.prose a:focus {
+		color: #4285f4;
+		text-decoration: underline;
 	}
 </style>
