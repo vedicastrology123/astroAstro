@@ -118,4 +118,4 @@ Proceeding from the center, you will find the following
 
 Om Tat Sat.
 
-Astrology secret carving in a Hindu temple on youtube youtu.be/D1Ifepa_O-I .
+[Astrology secret carving in a Hindu temple on youtube](https://www.youtube.com/watch?v=D1Ifepa_O-I) .

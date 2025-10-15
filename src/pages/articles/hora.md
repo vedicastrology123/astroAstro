@@ -82,4 +82,4 @@ So DO NOT follow Hora as told by Hindu Calendar or any Astrologer.
 
 The only sequence which is correct is by following sunrise time.
 
-**[Click here, to enrich your knowledge in Vedic Astrology with questions and answers.](/articles/faq/)**
+**[Click here, to enrich your knowledge in Vedic Astrology with questions and answers.](/articles/q2a-all-quora/)**

@@ -53,7 +53,7 @@ The 15 Tithis or Lunar phases are: Pratipada(Padyami), Dwiteeya, Triteeya, Chatu
 Download below youtube link and hear the below Stotram as many times.
 
 
-Shri Chakra Khadgamala Stotram on youtube video - youtu.be/djojAK_uheI .
+[Shri Chakra Khadgamala Stotram on youtube video](https://www.youtube.com/watch?v=HZlnArPRqAU).
 
 ##### Panchang
 

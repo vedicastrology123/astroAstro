@@ -66,4 +66,4 @@ Based on ownership of the planets and its Hora placement, predictions are given 
 
 Famous horoscope like Dhoni, has Mars powerful and in Sun Hora. This made him a famous cricketer and made him earn his wealth.
 
-**[Click here, to enrich your knowledge in Vedic Astrology with questions and answers.](/articles/faq/)**
+**[Click here, to enrich your knowledge in Vedic Astrology with questions and answers.](/articles/q2a-all-quora/)**

@@ -50,10 +50,6 @@ article:
    height: 60
    width: 60
 
-amp:
-  elements:
-   - "amp-youtube"
-
 ---
 
 ### Vedic Astrology
