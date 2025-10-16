@@ -5,14 +5,17 @@ import Layout from '../layouts/Layout.astro';
 import Announcements from '../components/Announcements.astro';
 import StructuredData from '../components/StructuredData.astro';
 import siteData from "../data/metadata.json";
+import siteInfo from "../data/siteData.json";
 
 const pageTitle = "About Us";
 const pageDescription = "Welcome to Vedic Astrology website by Steve Hora!";
 const pageKeywords = ["Steve Hora", "Vedic Astrologer", "Horoscope Predictions", "Mundane Wordly Predictions"];
 const pageWebsite = "www.stevehora.com";
 const pageEmail = "vedicastrology123@gmail.com";
-const pageUrl = pageWebsite + siteData.menu.url3;
-const pageimageUrl = "success.jpg";
+const canonicalURL = new URL(Astro.url.pathname, Astro.url);
+const siteURL = new URL("/", Astro.url);
+const pageimageUrl = siteInfo.default.openGraph.basic.image; //"/images/success.jpg";
+const pageUrl = siteURL + siteData.menu.url3;
 
 const seoOverrides = {
   title: pageTitle,

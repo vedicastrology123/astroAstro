@@ -7,13 +7,13 @@ const siteURL = new URL("/", Astro.url);
 
 
 // Get the page's frontmatter from Astro.props
-const { frontmatter } = Astro.props;
+const { seo: frontmatter = {} } = Astro.props;
 
-const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
+const seoOverrides = Astro.props;
 const seo = { ...siteDefaults.default, ...seoOverrides, ...frontmatter }; // Merge defaults with overrides
 
 // Get the page's URL from Astro.url
-const imageUrl = seo.openGraph.basic.image;
+const imageUrl = siteDefaults.default.openGraph.basic.image;
 
 ---
 
