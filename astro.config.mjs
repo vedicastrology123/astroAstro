@@ -9,6 +9,8 @@ import mdx from "@astrojs/mdx";
 
 import react from "@astrojs/react";
 
+import favicons from "astro-favicons";
+
 export default defineConfig({
   // ...
     markdown: {
@@ -37,8 +39,9 @@ export default defineConfig({
     workbox: {
       // You can use a generateSW strategy for automatic service worker generation
       // or injectManifest to provide your own.
+      maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       navigateFallback: "/",
       globPatterns: ["**/*.{css,js,html,svg,png,ico,txt}"],
     },
-  }), mdx(), react()],
+  }), mdx(), react(), favicons()],
 });

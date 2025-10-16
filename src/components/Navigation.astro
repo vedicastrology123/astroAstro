@@ -1,4 +1,5 @@
 ---
+import ThemeSlider from "./ThemeSlider.astro";
 
 ---
 <style>
@@ -15,6 +16,13 @@
   color: #000;                 /* icon color (white) */
   font-size: 36px;             /* icon size */
 }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
 </style>
 
     <ion-header>
@@ -23,12 +31,11 @@
                 <ion-menu-button>
                     <span class="icon-bg">
                         <ion-icon name="menu"></ion-icon>
-                    </span
+                    </span>
                 </ion-menu-button>
             </ion-buttons>
             <ion-title class="ion-text-center">Vedic Astrology</ion-title>
             <ion-title class="ion-text-center">Steve Hora</ion-title>
-
             <ion-buttons slot="end">
                 <ion-button href="https://twitter.com/SteveVedicAstro" target="_blank">
                     <ion-icon name="logo-twitter"></ion-icon>
@@ -48,6 +55,7 @@
                 <ion-button href="https://www.linkedin.com/in/steve-hora-vedic-astrologer" target="_blank">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </ion-button>
+                <ThemeSlider id="theme-toggle" />
             </ion-buttons>
         </ion-toolbar>
     </ion-header>

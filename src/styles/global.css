@@ -1,4 +1,4 @@
-html.dark {
+/* html.dark {
   background-color: #0d0950;
   color: #fff;
 }
@@ -19,6 +19,42 @@ html.dark {
 
 .dark a {
   color: #ff9776;
+} */
+
+:root[data-theme="light"] {
+	--background-color: #fff;
+	--color: #000000;
+	--heading-color: #222;
+	--link-color: #3273dc;
+	--link-visited-color: #193c75;
+	--code-background-color: #c7c7c7;
+	--theme-slider-initial-transform: 0px;
+    --light-theme-indicator-color: #ffcf00;
+    --dark-theme-indicator-color: var(--color);
+}
+
+:root[data-theme="dark"] {
+	--background-color: #444;
+	--color: #fff;
+	--heading-color: #f1f1f1;
+	--link-color: #de9906;
+	--link-visited-color: #966807;
+	--code-background-color: #252525;
+	--theme-slider-initial-transform: translateX(24px);
+    --light-theme-indicator-color: var(--color);
+    --dark-theme-indicator-color: #000000;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	margin: auto;
+	padding: 20px;
+	text-align: left;
+	background-color: var(--background-color);
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	line-height: 1.5;
+	color: var(--color);
 }
 
 #background {
