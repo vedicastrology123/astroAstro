@@ -1,0 +1,68 @@
+---
+
+
+---
+<button id="back-to-top" aria-label="Back to Top">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true">
+    <path
+      d="M12 4l8 8h-6v8h-4v-8H4l8-8z"
+    ></path>
+  </svg>
+</button>
+
+<style>
+  #back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #c71010;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3s ease-in-out,
+      visibility 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  #back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #back-to-top svg {
+    width: 24px;
+    height: 24px;
+  }
+</style>
+
+<script>
+
+  const backToTopButton = document.getElementById('back-to-top');
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add('visible');
+    } else {
+      backToTopButton.classList.remove('visible');
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  window.addEventListener('scroll', toggleVisibility);
+  backToTopButton.addEventListener('click', scrollToTop);
+</script>
