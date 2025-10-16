@@ -13,7 +13,7 @@ const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
 const seo = { ...siteDefaults.default, ...seoOverrides, ...frontmatter }; // Merge defaults with overrides
 
 // Get the page's URL from Astro.url
-const imageUrl = seo.openGraph.basic.url + "/" + seo.image;
+const imageUrl = seo.openGraph.basic.image;
 
 ---
 
