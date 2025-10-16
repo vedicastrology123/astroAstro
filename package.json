@@ -6,28 +6,34 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/markdown-remark": "^6.3.8",
     "@astrojs/mdx": "^4.3.7",
     "@astrojs/react": "^4.4.0",
     "@astrojs/sitemap": "^3.6.0",
     "@astrolib/seo": "^1.0.0-beta.8",
-    "@fortawesome/fontawesome-svg-core": "^7.1.0",
-    "@fortawesome/react-fontawesome": "^3.1.0",
-    "@ionic/core": "^8.7.5",
+    "@ionic/core": "^8.7.7",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "astro": "^5.14.1",
     "astro-favicons": "^3.1.5",
     "astro-seo-schema": "^5.1.0",
-    "ionicons": "^8.0.13",
+    "hast": "^0.0.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "sass": "^1.93.2",
-    "schema-dts": "^1.1.5"
+    "schema-dts": "^1.1.5",
+    "typescript": "^5.9.3",
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "@vite-pwa/astro": "^1.1.0"
+    "@vite-pwa/assets-generator": "^1.0.2",
+    "@vite-pwa/astro": "^1.1.1",
+    "sass-embedded": "^1.93.2",
+    "vite-plugin-pwa": "^1.1.0",
+    "workbox-window": "^7.3.0"
   }
 }

@@ -1,7 +1,6 @@
 ---
-import { pwaAssetsHead } from 'virtual:pwa-assets/head';
-import { pwaInfo } from 'virtual:pwa-info';
 
+import { pwaInfo } from "virtual:pwa-info";
 import siteDefaults from '../data/siteData.json';
 
 // Get the page's URL from Astro.url
@@ -32,13 +31,7 @@ const siteURL = new URL("/", Astro.url);
     <!-- You might also consider importing specific themes like: -->
     <link rel="stylesheet" href="/node_modules/@ionic/core/css/palettes/dark.always.css">
     <link rel="stylesheet" href="/src/styles/global.css">
-    {pwaAssetsHead.links.map(link => <link {...link} />)}
-    {pwaAssetsHead.themeColor && <meta name="theme-color" content={pwaAssetsHead.themeColor.content} />}
-    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
-    <script>
-        import { registerSW } from 'virtual:pwa-register';
-        registerSW({ immediate: true });
-    </script>
+
     <script type="module" src="/node_modules/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="/node_modules/@ionic/core/dist/ionic/ionic.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -107,6 +100,17 @@ const siteURL = new URL("/", Astro.url);
         gtag('config', 'G-2X899B1W82');
     </script>
 
-    
-<!-- Theme Util -->
-<script src="/lib/theme-util.js" type="text/javascript" is:inline></script>
+{pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+  <script>
+    import { registerSW } from "virtual:pwa-register";
+
+    registerSW({
+      immediate: true,
+      onRegisteredSW(swScriptUrl) {
+        console.log("SW registered: ", swScriptUrl);
+      },
+      onOfflineReady() {
+        console.log("PWA application ready to work offline");
+      },
+    });
+  </script>

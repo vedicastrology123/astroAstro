@@ -1,7 +1,0 @@
----
-const { previous, next } = Astro.props;
----
-<nav class="blog-nav">
-  {previous && <a href={`/articles/${previous.slug}`}>← Previous</a>}
-  {next && <a href={`/articles/${next.slug}`}>Next →</a>}
-</nav>
