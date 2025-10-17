@@ -1,8 +1,8 @@
 {
-"Access-Control-Allow-Origin": "http://localhost:8080/",
+"Access-Control-Allow-Origin": "https://stevehora.com/",
 "Access-Control-Allow-Methods": "POST",
 "Content-Type": "application/json",
 "Access-Control-Allow-Headers": "Content-Type",
-"AMP-Access-Control-Allow-Source-Origin": "http://localhost:8080/",
+"AMP-Access-Control-Allow-Source-Origin": "https://stevehora.com/",
 "Access-Control-Expose-Headers": "AMP-Access-Control-Allow-Source-Origin"
 }

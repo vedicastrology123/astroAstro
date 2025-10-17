@@ -16,13 +16,10 @@ import favicons from "astro-favicons";
 export default defineConfig({
   // ...
     markdown: {
-    rehypePlugins: [[targetBlank, { domain: 'localhost:8080' }]],
-  },
-  server: {
-    port: 8080
+    rehypePlugins: [[targetBlank, { domain: 'https://stevehora.com' }]],
   },
   compressHTML: false,
-  site: 'http://localhost:8080',
+  site: 'https://stevehora.com',
   integrations: [
     sitemap(), mdx(), react(), favicons(),
     AstroPWA({
