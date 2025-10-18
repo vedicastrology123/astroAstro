@@ -1,4 +1,13 @@
 ---
+import IonicButton from './ionic/IonicButton.jsx';
+import IonicIcon from './ionic/IonicIcon.jsx';
+import IonicHeader from './ionic/IonicHeader.jsx';
+import IonicToolBar from './ionic/IonicToolBar.jsx';
+
+import IonicMenuButton from './ionic/IonicMenuButton.jsx';
+import IonicTitle from './ionic/IonicTitle.jsx';
+import IonicStartButtons from './ionic/IonicStartButtons';
+import IonicEndButtons from './ionic/IonicEndButtons';
 
 ---
 <style>
@@ -12,43 +21,42 @@
 }
 
 .icon-bg ion-icon {
-  color: #000;                 /* icon color (white) */
+  color: #fff;                 /* icon color (white) */
   font-size: 36px;             /* icon size */
 }
-
 </style>
 
-    <ion-header>
-        <ion-toolbar color="secondary">       
-            <ion-buttons slot="start">
-                <ion-menu-button>
+     <IonicHeader>
+        <ion-toolbar color="secondary">
+            <IonicStartButtons>
+                <IonicMenuButton>
                     <span class="icon-bg">
                         <ion-icon name="menu"></ion-icon>
                     </span>
-                </ion-menu-button>
-            </ion-buttons>
+                </IonicMenuButton>
+            </IonicStartButtons>
             <ion-title class="ion-text-center">Vedic Astrology</ion-title>
             <ion-title class="ion-text-center">Steve Hora</ion-title>
-            <ion-buttons slot="end">
-                <ion-button href="https://twitter.com/SteveVedicAstro" target="_blank">
+            <IonicEndButtons>
+                 <IonicButton href="https://twitter.com/SteveVedicAstro" target="_blank">
                     <ion-icon name="logo-twitter"></ion-icon>
-                </ion-button>
-            </ion-buttons>
-            <ion-buttons slot="end">
-                <ion-button href="https://www.facebook.com/vedic.astrology123/" target="_blank">
+                </IonicButton>
+            </IonicEndButtons>
+            <IonicEndButtons>
+                <IonicButton href="https://www.facebook.com/vedic.astrology123/" target="_blank">
                     <ion-icon name="logo-facebook"></ion-icon>
-                </ion-button>
-            </ion-buttons>
-            <ion-buttons slot="end">
-                <ion-button href="https://www.instagram.com/stevehora_vedicastrology/" target="_blank">
+                </IonicButton>
+            </IonicEndButtons>
+            <IonicEndButtons>
+                <IonicButton href="https://www.instagram.com/stevehora_vedicastrology/" target="_blank">
                     <ion-icon name="logo-instagram"></ion-icon>
-                </ion-button>
-            </ion-buttons>
-            <ion-buttons slot="end">
-                <ion-button href="https://www.linkedin.com/in/steve-hora-vedic-astrologer" target="_blank">
+                </IonicButton>
+            </IonicEndButtons>
+            <IonicEndButtons>
+                <IonicButton href="https://www.linkedin.com/in/steve-hora-vedic-astrologer" target="_blank">
                     <ion-icon name="logo-linkedin"></ion-icon>
-                </ion-button>
-            </ion-buttons>
+                </IonicButton>
+            </IonicEndButtons>
         </ion-toolbar>
-    </ion-header>
+    </IonicHeader>
 

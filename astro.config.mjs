@@ -16,10 +16,10 @@ import favicons from "astro-favicons";
 export default defineConfig({
   // ...
     markdown: {
-    rehypePlugins: [[targetBlank, { domain: 'https://stevehora.com' }]],
+    rehypePlugins: [[targetBlank, { domain: 'http://localhost:4321' }]],
   },
   compressHTML: false,
-  site: 'https://stevehora.com',
+  site: 'http://localhost:4321',
   integrations: [
     sitemap(), mdx(), react(), favicons(),
     AstroPWA({
@@ -66,4 +66,12 @@ export default defineConfig({
         },
       }),
   ],
+    vite: {
+    optimizeDeps: {
+      include: ['@ionic/react', '@ionic/core'],
+      // include: ['@ionic/react'],
+      // Optional: Add other problematic packages if needed
+      exclude: ['@ionic/core/components'],
+    },
+  },
 });
