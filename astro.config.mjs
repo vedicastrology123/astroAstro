@@ -13,13 +13,19 @@ import favicons from "astro-favicons";
 
 
 
+import netlify from '@astrojs/netlify';
+
+
+
 export default defineConfig({
   // ...
-    markdown: {
-    rehypePlugins: [[targetBlank, { domain: 'http://localhost:4321' }]],
-  },
+  markdown: {
+  rehypePlugins: [[targetBlank, { domain: 'http://localhost:4321' }]],
+},
+
   compressHTML: false,
   site: 'http://localhost:4321',
+
   integrations: [
     sitemap(), mdx(), react(), favicons(),
     AstroPWA({
@@ -66,12 +72,15 @@ export default defineConfig({
         },
       }),
   ],
-    vite: {
-    optimizeDeps: {
-      include: ['@ionic/react', '@ionic/core'],
-      // include: ['@ionic/react'],
-      // Optional: Add other problematic packages if needed
-      exclude: ['@ionic/core/components'],
-    },
+
+  vite: {
+  optimizeDeps: {
+    include: ['@ionic/react', '@ionic/core'],
+    // include: ['@ionic/react'],
+    // Optional: Add other problematic packages if needed
+    exclude: ['@ionic/core/components'],
   },
+},
+
+  adapter: netlify(),
 });
