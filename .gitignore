@@ -25,3 +25,19 @@ pnpm-debug.log*
 
 # Local Netlify folder
 .netlify
+
+.gradle
+
+android/
+android.keystore
+app/
+app-release-bundle.aab
+app-release-signed.apk
+app-release-signed.apk.idsig
+app-release-unsigned-aligned.apk
+
+
+build/
+ios/
+manifest-checksum.txt
+txt

@@ -1,7 +1,37 @@
-  /*{Object.entries(allPosts).map(([slug, post]) => (
-    <ion-list lines="none" class="custom-list-background">
-    <ion-item class="custom-item-background">
-        <ion-label><a href={post.url}>{post.frontmatter.title}</a></ion-label>
-    </ion-item>
-    </ion-list>
-  ))}*/
+.astro
+.gitignore
+.gradle
+.netlify
+.vscode
+android
+android.keystore
+app
+app-release-bundle.aab
+app-release-signed.apk
+app-release-signed.apk.idsig
+app-release-unsigned-aligned.apk
+astro.config.mjs
+build
+build.gradle
+capacitor.config.ts
+deploy.bat
+dist
+gradle
+gradle.properties
+gradlew
+gradlew.bat
+ios
+manifest-checksum.txt
+manifest.json
+netlify.toml
+node_modules
+package-lock.json
+package.json
+public
+README.md
+settings.gradle
+src
+store_icon.png
+tsconfig.json
+twa-manifest.json
+txt
