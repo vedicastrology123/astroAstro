@@ -29,6 +29,7 @@ export default defineConfig({
   integrations: [
     sitemap(), mdx(), react(), favicons(),
     AstroPWA({
+        manifestFilename: 'manifest.json',
         manifest: {
           $schema: 'https://json.schemastore.org/web-manifest-combined.json',
           id: 'astrology',
