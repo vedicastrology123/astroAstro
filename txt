@@ -1,3 +1,5 @@
+bubblewrap build
+
 .astro
 .gitignore
 .gradle
