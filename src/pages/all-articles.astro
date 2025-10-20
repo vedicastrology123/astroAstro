@@ -13,13 +13,15 @@ const pageKeywords = ["Steve Hora", "Vedic Astrologer", "Horoscope Predictions",
 const pageWebsite = "www.stevehora.com";
 const pageEmail = "vedicastrology123@gmail.com";
 const pageUrl = pageWebsite + siteData.menu.menu7;
+const pageAnnounce = true;
 
 const seoOverrides = {
   title: pageTitle,
   description: pageDescription,
   keywords: pageKeywords,
   url: pageUrl,
-  email: pageEmail
+  email: pageEmail,
+  announce: pageAnnounce,
 };
 
 const structuredData = {
@@ -40,6 +42,7 @@ const allArticles = await getCollection('articles', ({ id }) => {
   return !excludedSlugs.includes(id);
 });
 
+
 ---
 
 <Layout {...seoOverrides}>
@@ -59,10 +62,10 @@ const allArticles = await getCollection('articles', ({ id }) => {
 		<h1>References</h1>
 	</ion-text>
 	<section>
-		<p><ion-router-link href="https://www.quora.com/profile/Steve-Hora">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
+		<p><ion-router-link href="https://www.quora.com/profile/Steve-Hora" target="_blank">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
 		<p><ion-router-link href="https://stevehora.substack.com/" target="_blank">Substack blog</ion-router-link></p>
 	</section>
-	<p><ion-router-link class="custom-center-label custom-footer-label" href="/about/" target="_blank">{siteData.copyright}</ion-router-link>.</p>
+	<p><ion-router-link class="custom-center-label custom-footer-label" href="/about/">{siteData.copyright}</ion-router-link>.</p>
 </Layout>
 
 <style>

@@ -1,6 +1,6 @@
     /* In your variables.scss or a component's scss */
     ion-content.ion-padding {
-        --ion-padding: 25px; /* Adjust as needed */
+        --ion-padding: 1.5rem; /* Adjust as needed */
     }
 
     ion-row {
@@ -37,12 +37,12 @@
     }
     ion-menu {
     /* Set a custom width for the menu*/
-    --width: 360px;
+    --width: 22rem;
 
     /* For a full-height menu, you can set the height to 100%*/
-    --height: 734px;
+    --height: 45rem;
 
     /* You can also use other custom properties for more control*/
-    --min-width: 250px;
-    --max-width: 360px;
+    --min-width: 15rem;
+    --max-width: 22rem;
   }

@@ -6,7 +6,7 @@
     "menu4": "contact",
     "menu5": "/articles/privacy",
     "menu6": "/articles/refunds",
-    "menu7": "/all-articles",
+    "menu7": "Astrology Articles",
     "menu8": "/articles/services",
     "menu9": "/articles/marriage-compatibility",
     "menu10": "/articles/vedic-astrology-books",
@@ -18,10 +18,12 @@
     "url2": "https://www.perplexity.ai/spaces/aries-ai-for-vedic-astrology-kOxuPwkJSryXna5VY_lr_Q#0",
     "url3": "/about",
     "url4": "/contact",
+    "url7": "/all-articles",
     "icon1": "desktop-outline",
     "icon2": "book-outline",
     "icon3": "accessibility-outline",
-    "icon4": "qr-code-outline"
+    "icon4": "qr-code-outline",
+    "icon7": "qr-code-outline"
   },
   "copyright": "Copyright © 2014-2030 - stevehora.com - All Rights Reserved",
   "author": {
