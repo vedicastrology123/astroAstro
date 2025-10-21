@@ -9,6 +9,9 @@
         ion-content.ion-padding {
             --padding-start: 25%;
         }
+        #p {
+            max-width: 80ch;
+        }
     }
     ion-row {
         height: 100%; /* Or use a relative unit like vh */

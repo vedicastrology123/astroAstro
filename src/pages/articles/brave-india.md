@@ -45,7 +45,8 @@ article:
 ---
 ### What happened at Galwan on 15th June 2020, night
 
-- An astrological analysis by Steve Hora - Vedic Astrologer, Researcher and Subject Matter Expert (SME) on Vedic, Naadi and Mundane Astrology.
+*** An astrological analysis by Steve Hora - Vedic Astrologer, Researcher and Subject Matter Expert (SME) on Vedic,
+Naadi and Mundane Astrology.
 
 The event timing was taken from [India-today newspaper information]( https://www.indiatoday.in/india/story/3-separate-brawls-outsider-chinese-troops-more-most-detailed-account-of-the-brutal-june-15-galwan-battle-1691185-2020-06-21)
 

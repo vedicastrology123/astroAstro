@@ -15,12 +15,17 @@ import favicons from "astro-favicons";
 
 import netlify from '@astrojs/netlify';
 
-
+import remarkLint from 'remark-lint';
+import remarkLintMaximumLineLength from 'remark-lint-maximum-line-length';
 
 export default defineConfig({
   // ...
   markdown: {
-  rehypePlugins: [[targetBlank, { domain: 'http://localhost:4321' }]],
+    rehypePlugins: [[targetBlank, { domain: 'http://localhost:4321' }]],
+    remarkPlugins: [
+    remarkLint,
+    [remarkLintMaximumLineLength, 80] // Sets the line length limit to 80
+  ],
 },
 
   compressHTML: false,

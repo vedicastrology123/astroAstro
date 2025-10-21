@@ -40,6 +40,8 @@
   "devDependencies": {
     "@vite-pwa/assets-generator": "^1.0.2",
     "@vite-pwa/astro": "^1.1.1",
+    "remark-lint": "^10.0.1",
+    "remark-lint-maximum-line-length": "^4.1.1",
     "sass-embedded": "^1.93.2",
     "vite-plugin-pwa": "^1.1.0",
     "workbox-window": "^7.3.0"
