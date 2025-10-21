@@ -152,7 +152,10 @@ p {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.006em;
-    margin: 0;
+    margin-bottom: 1em; /* Adjust spacing between paragraphs */
+
+    max-width: 700px; /* Limit maximum width for readability on large screens */
+
 }
 
 code {
@@ -192,12 +195,22 @@ code {
     }
 }
 
-@media screen and (max-width: 768px) {
-    #container {
-        display: flex;
-        flex-direction: column;
+    @media (max-width: 600px) { /* Styles for screens up to 600px wide (e.g., phones) */
+      .p {
+        width: 95%; /* Use more of the available width on smaller screens */
+        font-size: 16px; /* Adjust font size for better mobile readability */
+        line-height: 1.5; /* Optimize line spacing */
+      }
     }
 
+@media screen and (max-width: 768px) {
+    /* .p {
+        display: flex;
+        flex-direction: column;
+        margin: 5 auto;
+        padding-left: 2%;
+    } */
+    
     #hero {
         display: block;
         padding-top: 10%;
@@ -230,12 +243,6 @@ table, th, td {
 th, td {
     padding: 8px; /* Optional: Adds spacing inside cells */
 }
-p {
-    line-height: 2.0; /* Adjust line height */
-    margin-bottom: 1em; /* Adjust spacing between paragraphs */
-    max-width: 80ch;
-}
-
 
 a {
   text-decoration: none; /* Removes underline from all links by default */
@@ -244,7 +251,6 @@ a {
 a:hover {
   text-decoration: underline; /* Adds underline on hover */
 }
-
 
 ion-router-link {
   text-decoration: none;

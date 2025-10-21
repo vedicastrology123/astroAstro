@@ -50,7 +50,7 @@ const showAnnounce = false;
 					<img id="background" src={background.src} alt="" fetchpriority="high" />
 					<main>
 					<Menu />
-						<ion-content>
+						<ion-content class="ion-padding">
 							<slot />
 							<Announcements />
 						</ion-content>
@@ -62,11 +62,17 @@ const showAnnounce = false;
 </html>
 
 <style>
-	ion-content {
-	--padding-top: 20px;
-	--padding-bottom: 20px;
-	--padding-start: 25%; /* for left padding in LTR, right in RTL */
-	--padding-end: 75px;   /* for right padding in LTR, left in RTL */
+
+	.prose a {
+		color: #1a73e8;
+		text-decoration: none;
+		transition: color 0.3s ease, text-decoration 0.3s ease;
+	}
+
+	.prose a:hover,
+	.prose a:focus {
+		color: #4285f4;
+		text-decoration: underline;
 	}
 </style>
 

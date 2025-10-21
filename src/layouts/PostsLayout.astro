@@ -48,7 +48,7 @@ if (Astro.url.pathname === "/") {
 					<img id="background" src={background.src} alt="" fetchpriority="high" />
 					<main>
 					<Menu />
-						<ion-content>
+						<ion-content class="ion-padding">
 							<slot />
 							{index && <Announcements />}
 						</ion-content>
@@ -60,12 +60,6 @@ if (Astro.url.pathname === "/") {
 </html>
 
 <style is:global>
-	ion-content {
-	--padding-top: 20px;
-	--padding-bottom: 20px;
-	--padding-start: 25%;
-	--padding-end: 75px;
-	}
 	.prose a {
 		color: #1a73e8;
 		text-decoration: none;

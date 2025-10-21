@@ -153,7 +153,7 @@ This wards off evils and pitfalls. The birth stars of the girl and boy should no
 
 8. ###### Vashya. Vashyath anyonya vashyat
 
-his is an important koota suggesting the degree of magnetic control over each other. Moon sign of the bride and the bridegroom must fall in the same group to get the maximum of 2 points.
+This is an important koota suggesting the degree of magnetic control over each other. Moon sign of the bride and the bridegroom must fall in the same group to get the maximum of 2 points.
 Chatushpada (quadruped) – Mesha, Vrisha, the second half of Dhanu, the first half of Makara.
 Manava Nara (biped) – Mithuna, Kanya, Tula, the first half of Dhanu, Kumbha.
 Jalachara (Aquatic) – Karka, Meena, the second Half of Makara.
@@ -173,7 +173,10 @@ Gunas from matching of Vashya
 | Keeta           | 1           | 1      | 1         | 0         | 2     |
 
 <br />
-Every zodiac sign has its own special characteristics, strengths and limitations. We all seems to experience higher compatibility levels with some and don’t get along that well with a few. This compatibility is believed to come from the zodiac signs of the individuals.
+
+Every zodiac sign has its own special characteristics, strengths and limitations.
+We all seems to experience higher compatibility levels with some and don’t get along that well with a few.
+This compatibility is believed to come from the zodiac signs of the individuals.
 
 When the Vashya Koota is found to be compatible between the prospective bride and groom, it is believed to ensure a harmonious marriage. With Vashya Koota, the most compatible horoscopes score 2 points, whereas the least compatible ones score 0 points.
 
