@@ -10,33 +10,41 @@
 
 <script>
   import { isDialogShown } from '../utils/dialog.js';
-  const cookieName = 'astro_cookie_name';
-  const cookieValue = 'astro_cookie_value';
 
   const dialog = document.getElementById('welcomeDialog');
   const closeBtn = document.getElementById('closeDialog');
   closeBtn.classList.add('close-button');
 
-  // Open the dialog only if it hasn't been shown yet.
-  if (!isDialogShown.get() || !hasCookie(cookieName)) {
-    dialog.showModal();
-    isDialogShown.set(true);
-  }
+  let cookieName = 'astro_cookie_name';
+  let cookieValue = 'astro_cookie_value';
+  let cookieExists = false;
+  let myCookieValue = "";
+  
+  document.addEventListener('DOMContentLoaded', () => {
+      myCookieValue = getCookie(cookieName);
+      if (myCookieValue != null) {
+        cookieExists = true;
+      }
+      else {
+          // Open the dialog only if it hasn't been shown yet.
+        if (!isDialogShown.get()) {
+          dialog.showModal();
+          isDialogShown.set(true);
+        }
+      }
+  });
 
   // Set the store back to false when the dialog is closed.
   closeBtn.addEventListener('click', () => {
     isDialogShown.set(false);
-
-    const myCookieValue = getCookie(cookieName);
-
-    if (myCookieValue) {
+    if (cookieExists) {
       try {
         // Assuming the cookie value is a JSON string with an 'expiry' field
         const cookieData = JSON.parse(myCookieValue);
         if (cookieData.expiry && cookieData.expiry < Date.now()) {
           //console.log('myCookie has expired.');
           // Perform actions for an expired cookie, e.g., delete it or re-authenticate
-          document.cookie = "cookieName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+          setCookie(cookieName, cookieValue);
         }
       } catch (e) {
         console.error('Error parsing cookie data:', e);
@@ -46,16 +54,16 @@
     }
   });
 
-  function hasCookie(cookieName) {
-    return document.cookie.split(';').some(c => c.trim().startsWith(cookieName + '='));
-  }
+  // function hasCookie(cookieName) {
+  //   return document.cookie.split(';').some(c => c.trim().startsWith(cookieName + '='));
+  // }
 
   function setCookie(cookieName, cookieValue) {
-    const thirteenDaysInMilliseconds = 3 * 24 * 60 * 60 * 1000;
+    const threeDaysInMilliseconds = 1 * 24 * 60 * 60 * 1000;
     const expirationDate = new Date(Date.now() + threeDaysInMilliseconds);
     const expiresUTCString = expirationDate.toUTCString();
 
-    document.cookie = `cookieName=cookieValue; Expires=${expiresUTCString}; Path=/; SameSite=Lax; Secure`;
+    document.cookie = `${cookieName}=${cookieValue}; Expires=${expiresUTCString}; Path=/; SameSite=Lax; Secure`;
   }
 
     // Function to get a specific cookie's value
