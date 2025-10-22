@@ -85,7 +85,7 @@ export default defineConfig({
       }),
   ],
 
-  //adapter: netlify(),
+  adapter: netlify(),
   vite: {
   optimizeDeps: {
     include: ['@ionic/react', '@ionic/core'],
