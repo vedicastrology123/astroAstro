@@ -23,9 +23,9 @@ import node from '@astrojs/node';
 export default defineConfig({
   // ...
   output: 'server',
-  adapter: node({
-    mode: 'standalone',
-  }),
+  // adapter: node({
+  //   mode: 'standalone',
+  // }),
   markdown: {
     rehypePlugins: [[targetBlank, { domain: 'http://localhost:4321' }]],
     remarkPlugins: [
@@ -84,7 +84,6 @@ export default defineConfig({
         },
       }),
   ],
-
   adapter: netlify(),
   vite: {
   optimizeDeps: {
