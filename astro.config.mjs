@@ -93,8 +93,4 @@ export default defineConfig({
     exclude: ['@ionic/core/components'],
   },
 },
-
-  adapter: node({
-    mode: 'standalone',
-  }),
 });
