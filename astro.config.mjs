@@ -10,7 +10,7 @@ import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 
 import favicons from "astro-favicons";
-
+import node from '@astrojs/node';
 
 
 import netlify from '@astrojs/netlify';
@@ -18,8 +18,14 @@ import netlify from '@astrojs/netlify';
 import remarkLint from 'remark-lint';
 import remarkLintMaximumLineLength from 'remark-lint-maximum-line-length';
 
+import node from '@astrojs/node';
+
 export default defineConfig({
   // ...
+  output: 'server',
+  adapter: node({
+    mode: 'standalone',
+  }),
   markdown: {
     rehypePlugins: [[targetBlank, { domain: 'http://localhost:4321' }]],
     remarkPlugins: [
@@ -79,6 +85,7 @@ export default defineConfig({
       }),
   ],
 
+  //adapter: netlify(),
   vite: {
   optimizeDeps: {
     include: ['@ionic/react', '@ionic/core'],
@@ -88,5 +95,7 @@ export default defineConfig({
   },
 },
 
-  //adapter: netlify(),
+  adapter: node({
+    mode: 'standalone',
+  }),
 });
