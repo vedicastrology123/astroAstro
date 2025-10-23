@@ -23,9 +23,11 @@ import node from '@astrojs/node';
 export default defineConfig({
   // ...
   output: 'server',
-  // adapter: node({
-  //   mode: 'standalone',
-  // }),
+  server: {
+    headers: {
+      'Content-Type': 'text/html;charset=utf-8',
+    },
+  },
   markdown: {
     rehypePlugins: [[targetBlank, { domain: 'http://localhost:4321' }]],
     remarkPlugins: [

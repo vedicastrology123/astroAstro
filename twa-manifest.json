@@ -20,8 +20,8 @@
     "path": "C:\\astroAstro\\android.keystore",
     "alias": "android"
   },
-  "appVersionName": "5",
-  "appVersionCode": 6,
+  "appVersionName": "7",
+  "appVersionCode": 7,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://stevehora.com/manifest.json",

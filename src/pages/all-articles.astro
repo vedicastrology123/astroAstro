@@ -62,10 +62,10 @@ const allArticles = await getCollection('articles', ({ id }) => {
 		<h1>References</h1>
 	</ion-text>
 	<section>
-		<p><ion-router-link href="https://www.quora.com/profile/Steve-Hora" target="_blank">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
-		<p><ion-router-link href="https://stevehora.substack.com/" target="_blank">Substack blog</ion-router-link></p>
+		<p><ion-router-link href="https://www.quora.com/profile/Steve-Hora" target="_blank" title="Quora">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
+		<p><ion-router-link href="https://stevehora.substack.com/" target="_blank" title="Whatsapp">Substack blog</ion-router-link></p>
 	</section>
-	<p><ion-router-link class="custom-center-label custom-footer-label" href="/about/">{siteData.copyright}</ion-router-link>.</p>
+	<p><ion-router-link class="custom-center-label custom-footer-label" href="/about/" title="Copyright">{siteData.copyright}</ion-router-link>.</p>
 </Layout>
 
 <style>
