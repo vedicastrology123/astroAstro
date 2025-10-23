@@ -12,7 +12,6 @@ import react from "@astrojs/react";
 import favicons from "astro-favicons";
 import node from '@astrojs/node';
 
-
 import netlify from '@astrojs/netlify';
 
 import remarkLint from 'remark-lint';
