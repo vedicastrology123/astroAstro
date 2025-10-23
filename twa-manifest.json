@@ -21,7 +21,7 @@
     "alias": "android"
   },
   "appVersionName": "7",
-  "appVersionCode": 7,
+  "appVersionCode": 8,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://stevehora.com/manifest.json",
@@ -43,5 +43,5 @@
   "fileHandlers": [],
   "launchHandlerClientMode": "",
   "displayOverride": [],
-  "appVersion": "5"
+  "appVersion": "7"
 }
