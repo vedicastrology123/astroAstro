@@ -60,6 +60,3 @@ For Marriage Horoscope matching of boy and girl, use nakshatra matching.
 #### For Horoscope matching
 
 Consult an expert astrologer for Matrimony matching or marriage compatibility.
-
-
-[More at quora question and answer](https://www.quora.com/How-do-we-find-a-karmic-relationship-or-past-life-karmic-connection-when-we-match-two-horoscopes-Do-we-check-D1-to-D9-or-D1-to-D1-charts/answer/Steve-Hora)

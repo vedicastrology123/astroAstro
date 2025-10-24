@@ -43,13 +43,10 @@ Vedic astrology is one of the vedangas of the Vedas, the ancient Hindu scripture
 
 In Vedic astrology, a person s destiny is determined by his/her karma, which is set forth in the cosmic design.
 
-Our site provides [Free Vedic Astrology Birth Chart](#birth-chart).
+Our site provides [Free Vedic Astrology Birth Chart](/articles/birth-chart).
 
-[Matrimony or Marriage Matching](#matrimony-or-marriage-matching).
+[Matrimony or Marriage Matching](/articles/marriage-compatibility).
 
-Worldly prediction are made using [Mundane Astrology](#mundane-astrology-predictions).
-
-[Stock Analysis and Vedic Astrology](#stock-analysis-and-vedic-astrology).
 
 Know more about the connection of [Free Will, Karma and Vedic Astrology](/articles/karma-and-astrology/).
 
@@ -61,7 +58,7 @@ In Vedic astrology, a master astrologer, known as a jyotish acharaya, uses a var
 
 ##### Birth Chart
 
-[Click here to get your Birth Chart](/calculate-your-vedic-astrology-chart/).
+[Click here to get your Birth Chart](/articles/birth-chart/).
 Birth Chart is also called by different names like Vedic Astrology chart, Jathakam, Janam Kundli, Natal Chart, Birth Horoscope, Rash chart and Sidereal Birth chart.
 
 The chart is prepared with Ayanamsa or Precession of Equinox. [Ayanamsa or Precession of Equinox can be calculated scientifically](/articles/ayanamsa).
@@ -79,8 +76,4 @@ Birth chart analysis is as per Parasara system and Timing using Vimshottari Dash
 
 [Predictions for August 2020.](/articles/august-2020/)
 
-##### Stock Analysis and Vedic Astrology
-
-If you want to explore the secrets of Vedic Astrology, read [W.D.Gann and Vedic Astrology for Stock Analysis.](/articles/gann-w-d/)
-
-[Hora Vedic Astrology By Steve Hora](/steve-hora/), Vedic Astrologer or Jyotish, can be reached at  https://stevehora.substack.com/  for further details.
+[Hora Vedic Astrology By Steve Hora](/articles/stevehora/), Vedic Astrologer or Jyotish, can be reached at  https://stevehora.substack.com/  for further details.
