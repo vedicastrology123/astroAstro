@@ -70,12 +70,12 @@ In mundane astrology, when dealing with regions, it is very important to see, th
 
 Lagna and its lord, 10th house lord and Dasamsa tells about the power of the country, its institutions of Constitutional law and its amendments and there upon its jurisdictions.
 
-<img src="/src/static/images/articles/qu1.png" alt="India Independence Date" width="359" height="199">
+<img src="/images/articles/qu1.png" alt="India Independence Date" width="359" height="199">
 
-<img src="/src/static/images/articles/qu2.png" alt="Independence Chart" width="602" height="851">
+<img src="/images/articles/qu2.png" alt="Independence Chart" width="602" height="851">
 
 The Dasamsa positions are as below
-<img src="/src/static/images/articles/qu3.png" alt="Dasamsa" width="434" height="205">
+<img src="/images/articles/qu3.png" alt="Dasamsa" width="434" height="205">
 
 Analyzing the Lagna or Rasi chart, one can find Guru is the lagna lord, 10th house lord also and he is in 11th house, neecha, flanked by 6th lord Surya and 8th lord Shukra. A clear case of caught between enemies- hidden and outside.
 

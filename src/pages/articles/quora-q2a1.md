@@ -101,7 +101,7 @@ Refer above questions answer. Further research into Nadi Palm leaf timing method
 
 6. Mostly it is 3 years, so it is D60 being used. 7. Moving the house, for each set of years, gets the Mundane Predictions.
 
-<img src="/src/static/images/articles/quu1.png" alt="D 60" width="250" height="200">
+<img src="/images/articles/quu1.png" alt="D 60" width="250" height="200">
 
 </td>
 </tr>
@@ -127,7 +127,7 @@ At least D9 has a proper definition in terms of nakshatra padas.
 
 Going by above considerations, all other divisional charts have this definition as told, with its stated anomalies.
 
-<img src="/src/static/images/articles/quu2.png" alt="D 60" width="193" height="130">
+<img src="/images/articles/quu2.png" alt="D 60" width="193" height="130">
 
 A closer look at D60 reveals secrets from a Nadi perspective. The same analogy can be used to derive mathematically, deduce and predict any divisional charts.
 

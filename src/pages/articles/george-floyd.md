@@ -52,7 +52,7 @@ This indicates that the event that happened, will become famous.
 Guru as 5th lord, which indicates **Name and Fame**, is also Vargottama, but retrograde. This again makes George Floyd very famous, by sudden and unpredictable way.
 
 
-<img src="/src/static/images/articles/gf.png" alt="GeorgeFloyd" width="129" height="167">
+<img src="/images/articles/gf.png" alt="GeorgeFloyd" width="129" height="167">
 
 
 Rahu is with Budha, sudden death happens.

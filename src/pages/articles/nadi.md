@@ -73,4 +73,4 @@ Extrapolating one can only map the first letter and sound from the Rashi.
 
 In a Palm leaf reading, one can ascertain mathematically the first letter and consequent letters of oneself, father’s and mother’s name. Thus the name was found.
 
-![NadiAmsa and Tamil Nadi Palm Leaf](/src/static/images/nadi.jpg "Nadi and Tamil Horoscope Reading")
+![NadiAmsa and Tamil Nadi Palm Leaf](/images/articles/nadi.jpg "Nadi and Tamil Horoscope Reading")

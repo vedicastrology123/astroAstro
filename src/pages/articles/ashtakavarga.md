@@ -70,7 +70,7 @@ The principle of this system is as follows :
 
 * Ashtakavarga is done for each graha and also a cumulative Ashtakavarga called  **Sarva Ashtakavarga**. The total sum of Sarva Ashtakavarga on all 12 bhavas is 337.
 
-<img src="/src/static/images/articles/ashtakavarga.png" alt="Ashtakavarga" width="428" height="411">
+<img src="/images/articles/ashtakavarga.png" alt="Ashtakavarga" width="428" height="411">
 
 #### To start with
 

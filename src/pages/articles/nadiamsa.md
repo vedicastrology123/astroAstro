@@ -39,7 +39,7 @@ article:
 
 Nadi is 150th division of each Rashi in Lagna chart.
 
-![NadiAmsa and Tamil Nadi Palm Leaf](/src/static/images/nadiamsa.jpg "NadiAmsa and Tamil Nadi Palm Leaf Horoscope Reading")
+![NadiAmsa and Tamil Nadi Palm Leaf](/images/articles/nadiamsa.jpg "NadiAmsa and Tamil Nadi Palm Leaf Horoscope Reading")
 
 The Nadis are unequal divisions according to 16 Shodhasa Varga chart divisions.
 

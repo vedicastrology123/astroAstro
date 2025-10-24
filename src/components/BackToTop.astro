@@ -1,0 +1,72 @@
+---
+import IonicTopButton from "./ionic/IonicTopButton";
+
+// src/components/BackToTop.astro
+// The script block defines the client-side behavior for interactivity.
+---
+<!-- <IonicTopButton>
+  <ion-icon name="arrow-up"></ion-icon>
+</IonicTopButton> -->
+
+    <ion-button id="back-to-top" aria-label="Back to Top">
+
+  <ion-icon name="arrow-up"></ion-icon>
+    </ion-button>
+
+<style>
+  #back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 5px;
+    z-index: 9999;
+    background: var(--ion-color-primary, #3880ff);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(100px); /* Initially hidden below the screen */
+    opacity: 0;
+  }
+
+  /* Style for when the button is visible */
+  #back-to-top.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  ion-icon {
+    font-size: 20px;
+  }
+</style>
+
+<script>
+  // This script runs only on the client because of the client:visible directive.
+  // The logic for displaying and scrolling the button is defined here.
+  const backToTopButton = document.getElementById('back-to-top');
+  alert("H" + backToTopButton);
+
+  function toggleBackToTopButton() {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add('visible');
+    } else {
+      backToTopButton.classList.remove('visible');
+    }
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  window.addEventListener('scroll', toggleBackToTopButton);
+  backToTopButton.addEventListener('click', scrollToTop);
+</script>
+

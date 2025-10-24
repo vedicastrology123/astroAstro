@@ -79,7 +79,7 @@ Parasara s with NO exceptions. There will be NO consideration for subtraction or
 
 ##### Analysis of Mahatma Gandhi Chart
 
-<img src="/src/static/images/articles/mahatma-gandhi.png" alt="Horoscope of Mahatma Gandhi" width="724" height="1024">
+<img src="/images/articles/mahatma-gandhi.png" alt="Horoscope of Mahatma Gandhi" width="724" height="1024">
 
 Marriage happened in May 1883. Jaimini Chara dasha running period was Dhanur-Makara.
 

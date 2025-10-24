@@ -68,7 +68,7 @@ It will look like below.
 
 
 
-<img src="/src/static/images/Birth-Vedic-Horoscope.jpg" alt="A sample Vedic Astrology Birth Chart" width="400" height="500">
+<img src="/images/articles/Birth-Vedic-Horoscope.jpg" alt="A sample Vedic Astrology Birth Chart" width="400" height="500">
 
 A **pdf version** of your birth chart, can also be made available.
 

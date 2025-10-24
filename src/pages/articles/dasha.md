@@ -43,7 +43,7 @@ article:
 
 Each Dasha system has a purpose as enumerated in the samhitas.
 
-<img src="/src/static/images/articles/dasha.png" alt="Dasha system" width="310" height="163">
+<img src="/images/articles/dasha.png" alt="Dasha system" width="310" height="163">
 
 There are general purpose dasha sytems namely Vimshottari and Ashtottari Dasha systems.
 
