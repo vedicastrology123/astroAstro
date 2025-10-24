@@ -140,3 +140,50 @@ const siteURL = new URL("/", Astro.url);
       },
     });
   </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Steve Hora",
+  "image": "https://stevehora.com/favicon.svg",
+  "@id": "https://stevehora.com",
+  "url": "https://stevehora.com",
+  "telephone": "91 8610386346",
+  "priceRange": "17",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Street",
+    "addressLocality": "Chennai",
+    "postalCode": "600130",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 12.8629716,
+    "longitude": 80.1915941
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://www.facebook.com/vedic.astrology123/",
+    "https://twitter.com/SteveVedicAstro",
+    "https://www.instagram.com/stevehora_vedicastrology/",
+    "https://www.youtube.com/@vedicastrology_steve",
+    "https://www.linkedin.com/in/steve-hora-vedic-astrologer",
+    "https://stevehora.com"
+  ] 
+}
+</script>
