@@ -33,19 +33,18 @@ const siteURL = new URL("/", Astro.url);
       @import '../styles/global.css';
     </style>
     <!-- Import core Ionic CSS -->
-    <!-- <link rel="stylesheet" href="/@ionic/core/css/core.css">
-    <link rel="stylesheet" href="/@ionic/core/css/normalize.css">
-    <link rel="stylesheet" href="/@ionic/core/css/structure.css">
-    <link rel="stylesheet" href="/@ionic/core/css/typography.css"> -->
     <!-- Optional: Import platform-specific styles if needed -->
-    <!-- <link rel="stylesheet" href="/node_modules/@ionic/core/css/ionic.bundle.css">  -->
+    <link rel="stylesheet" href="/node_modules/@ionic/core/css/ionic.bundle.css"> 
     <!-- You might also consider importing specific themes like: -->
-    <!-- <link rel="stylesheet" href="/node_modules/@ionic/core/css/palettes/dark.always.css"> -->
-    <!-- <link rel="stylesheet" href="../styles/global.css"> -->
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-    <!-- <script type="module" src="/node_modules/@ionic/core/dist/ionic/ionic.esm.js"></script> -->
-    <script nomodule src="/node_modules/@ionic/core/dist/ionic/ionic.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/node_modules/@ionic/core/css/palettes/dark.always.css">
+
+    <!-- <script type="module" src="node_modules/@ionic/core/dist/ionic/ionic.esm.js"></script> -->
+    <!-- <script nomodule src="/node_modules/@ionic/core/dist/ionic/ionic.js"></script> -->
+
+      <!-- Ionic Core JS (ESM for modern browsers, nomodule for older) -->
+      <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+      <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
     <script>
             document.addEventListener('DOMContentLoaded', () => {
               const myElement = document.querySelector('hamburger');
@@ -60,11 +59,6 @@ const siteURL = new URL("/", Astro.url);
                 })
               }            
             });
-
-
-        // document.getElementById('hamburger').addEventListener('click', () => {
-        //     document.getElementById('nav').classList.toggle('hidden');
-        // });
     </script>
     <link rel="sitemap" href="/sitemap-index.xml" />
     <!-- Google Tag Manager -->

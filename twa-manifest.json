@@ -20,8 +20,8 @@
     "path": "C:\\astroAstro\\android.keystore",
     "alias": "android"
   },
-  "appVersionName": "Prod",
-  "appVersionCode": 2,
+  "appVersionName": "Production",
+  "appVersionCode": 10,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://stevehora.com/manifest.json",
@@ -43,5 +43,5 @@
   "fileHandlers": [],
   "launchHandlerClientMode": "",
   "displayOverride": [],
-  "appVersion": "Prod"
+  "appVersion": "Production"
 }

@@ -7,7 +7,7 @@ import StructuredData from '../components/StructuredData.astro';
 import siteData from "../data/metadata.json";
 import siteInfo from "../data/siteData.json";
 
-const pageTitle = "About Us";
+const pageTitle = "Error Handling page";
 const pageDescription = "Welcome to Vedic Astrology website by Steve Hora!";
 const pageKeywords = ["Steve Hora", "Vedic Astrologer", "Horoscope Predictions", "Mundane Wordly Predictions"];
 const pageWebsite = "www.stevehora.com";
@@ -45,8 +45,10 @@ const structuredData = {
         <StructuredData structuredData={structuredData} />
     </Fragment>
 	<ion-text color="secondary">
-		<h1>About Us</h1>
+		<h1>Error Handling Page</h1>
 	</ion-text>
+    <p style="color:red;">Something went wrong, sorry about that. Email the problem to vedicastrology123@gmail.com, we will fix it.</p>
+    <br /><br />
 	<p><ion-router-link href="https://stevehora.com" title="Steve Hora">Vedic Astrology by Steve Hora</ion-router-link></p>
 	<p><ion-router-link href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0" rel="noopener noreferrer"  target="_blank"  title="Whatsapp">Chat with Steve Hora</ion-router-link></p>
 	<p><ion-router-link href="https://chat.arattai.in/groups/j43545f313239303430363134313434313835363839315f32303030363635363837322d47437c3031303131323034333234353137353935373138353436383830" rel="noopener noreferrer"  target="_blank"  title="Arattai">Join our Arattai App Group</ion-router-link></p>
