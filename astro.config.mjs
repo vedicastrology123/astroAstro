@@ -36,7 +36,7 @@ export default defineConfig({
 },
 
   compressHTML: false,
-  site: 'http://localhost:4321',
+  site: 'https://stevehora.com',
 
   integrations: [
     sitemap(), mdx(), react(), favicons(),
