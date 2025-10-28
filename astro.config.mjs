@@ -21,6 +21,7 @@ import node from '@astrojs/node';
 
 export default defineConfig({
   // ...
+  base: '/',
   output: 'server',
   server: {
     headers: {
