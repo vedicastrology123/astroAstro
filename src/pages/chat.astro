@@ -81,19 +81,51 @@ const email = session.data.user?.email;
     </Fragment>
 	<ion-text color="secondary">
     <h1>Welcome {email}</h1>
-		<h2>Chat with Steve Hora, Vedic Astrology Expert</h2>
-   		<!-- <ChatContainer client:load /> -->
+    <p>We are happy to see you here.</p>
+		<h5>Chat with Steve Hora, Vedic Astrology Expert</h5>
 	</ion-text>
-	<p><ion-router-link href="https://stevehora.com" title="Steve Hora">Vedic Astrology by Steve Hora</ion-router-link></p>
-  <p>We are happy to see you here</p>
-  <form action="/api/auth/signout">
-    <button type="submit">Sign out</button>
-  </form>
+  <ChatContainer client:load />
+
 	<ion-text color="secondary">
-		<h1>References</h1>
+  <br />
+	<h1>References</h1>
+	<p><ion-router-link href="https://stevehora.com" title="Steve Hora">Vedic Astrology by Steve Hora</ion-router-link></p>
 	</ion-text>
 	<section>
 		<p><ion-router-link href="https://www.quora.com/profile/Steve-Hora" rel="noopener noreferrer"  target="_blank"  title="Quora Q2A">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
 	</section>
 	<p><ion-router-link class="custom-center-label custom-footer-label" href="/about/" title="Copyright">{siteData.copyright}</ion-router-link>.</p>
+  <p>
+  <form action="/api/auth/signout">
+    <button type="submit">Sign out</button>
+  </form>
+  </p>
 </Layout>
+
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    width: 10.0rem;
+  }
+
+  input[type="text"] {
+    padding: 0.05rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    width: 20rem;
+  }
+
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
