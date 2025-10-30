@@ -32,7 +32,7 @@ if (accessToken || refreshToken) {
       <!-- Menu content goes here -->
        
     <ion-list lines="none" class="custom-list-background">
-    {!showLabel && 
+    <!-- {!showLabel && 
       <ion-item class="custom-item-background">
         <ion-label><a href="/register" title="Register">Register</a></ion-label>
       </ion-item>
@@ -42,7 +42,7 @@ if (accessToken || refreshToken) {
     }
       <ion-item class="custom-item-background">
         <ion-label><ion-router-link href="/chat" title="Chat"><b>Chat Room</b></ion-router-link></ion-label>
-      </ion-item>
+      </ion-item> -->
       <br />
       <ion-item class="custom-item-background">
         <ion-label><a href={siteData.menu.menu11}>Your Birth Horoscope</a></ion-label>
@@ -63,11 +63,11 @@ if (accessToken || refreshToken) {
         <ion-label><a href={siteData.menu.menu14}>Testimonials</a></ion-label>
       </ion-item>
       <br />
-      {showLabel &&
+      <!-- {showLabel &&
       <ion-item class="custom-item-background">
         <ion-label><a href="/api/auth/signout"><b>Sign out</b></a></ion-label>
       </ion-item>
-      }
+      } -->
     </ion-list>
   </ion-content>
 
