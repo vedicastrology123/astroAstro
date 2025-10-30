@@ -31,7 +31,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    rehypePlugins: [[targetBlank, { domain: 'http://localhost:4321' }]],
+    rehypePlugins: [[targetBlank, { domain: 'https://stevehora.com' }]],
     remarkPlugins: [
     remarkLint,
     [remarkLintMaximumLineLength, 80] // Sets the line length limit to 80
