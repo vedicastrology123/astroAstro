@@ -13,16 +13,18 @@ import favicons from "astro-favicons";
 import node from '@astrojs/node';
 
 import netlify from '@astrojs/netlify';
+//import tailwindcss from "@tailwindcss/vite";
 
 import remarkLint from 'remark-lint';
 import remarkLintMaximumLineLength from 'remark-lint-maximum-line-length';
-
-import node from '@astrojs/node';
 
 export default defineConfig({
   // ...
   base: '/',
   output: 'server',
+  // adapter: node({
+  //   mode: "standalone",
+  // }),
   server: {
     headers: {
       'Content-Type': 'text/html;charset=utf-8',
@@ -88,11 +90,12 @@ export default defineConfig({
   ],
   adapter: netlify(),
   vite: {
-  optimizeDeps: {
-    include: ['@ionic/react', '@ionic/core'],
-    // include: ['@ionic/react'],
-    // Optional: Add other problematic packages if needed
-    exclude: ['@ionic/core/components'],
-  },
+    //plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: ['@ionic/react', '@ionic/core'],
+      // include: ['@ionic/react'],
+      // Optional: Add other problematic packages if needed
+      exclude: ['@ionic/core/components'],
+    },
 },
 });
