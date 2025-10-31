@@ -1,0 +1,148 @@
+<!-- src/components/Dialog.astro -->
+---
+// Astro frontmatter script (runs on the server during build)
+// You can define props here
+const { id } = Astro.props;
+---
+
+<!-- Component Template (HTML + client-side elements) -->
+<button id={`open-${id}`}>For Horoscope Predictions, click here...</button>
+
+<dialog id={id}>
+  <p style="text-align: center;"><h5>Welcome to our Vedic Astrology website!</h5></p>
+  <p> For a <a href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0" rel="noopener noreferrer"  target="_blank" > quick Whatsapp chat with Steve Hora, click here...</a></p>
+  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSf2SIxzRL87dW-pwnVLh5Q484ou7vLD1Yx-cKBLD7iXQvR3_g/viewform?pli=1" rel="noopener noreferrer"  target="_blank" > Birth Horoscope predictions, pleae fill this form...</a></p>
+  <form method="dialog">
+    <button id={`close-${id}`}>Close</button>
+  </form>
+</dialog>
+
+<script define:vars={{ id }}>
+  // This script runs in the browser, with full DOM access
+  const dialog = document.getElementById(id);
+  const openDialog = document.getElementById(id);
+  const openButton = document.getElementById(`open-${id}`);
+  openButton.classList.add('open-button');
+  const closeButton = document.getElementById(`close-${id}`);
+  closeButton.classList.add('close-button');
+
+  if (openButton && dialog) {
+    openButton.addEventListener('click', () => {
+      // Use showModal() for a modal with a backdrop
+      dialog.showModal();
+    });
+  }
+
+  // if (document.readyState === 'loading') {
+  //   document.addEventListener('DOMContentLoaded', yourFunction);
+  // } else {
+  //   yourFunction(); // DOMContentLoaded has already fired
+  // }
+
+//   document.addEventListener('astro:page-load', () => {
+//   // Code to re-run after every navigation (equivalent to DOMContentLoaded for MPAs with VT)
+//   const myDialog = document.getElementById(id);
+//   if (myDialog) {
+//       // Re-attach event listeners or re-initialize logic
+//       alert();
+//   }
+// });
+
+function yourFunction() {
+//alert("sss");
+  //document.addEventListener('astro:page-load', () => {
+    
+      myCookieValue = getCookie(cookieName);
+      if (myCookieValue != null) {
+        cookieExists = true;
+      }
+      else {
+          // Open the dialog only if it hasn't been shown yet.
+        if (!dialog) {
+          dialog.showModal();
+          //isDialogShown.set(true);
+        }
+      }
+  };
+
+  if (closeButton && dialog) {
+    closeButton.addEventListener('click', () => {
+      dialog.close();
+    });
+  }
+</script>
+
+<!-- <style>
+  /* Styling for the dialog and its backdrop */
+  dialog {
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+</style> -->
+
+<style>
+  /* Base dialog styles */
+  dialog {
+    padding: 2rem;
+    border: 1px solid #ccc;;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Backdrop styling */
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Your theme styles below */
+  dialog[data-theme="dark"] {
+    background-color: #ffffff;
+    color: white;
+  }
+
+  dialog[data-theme="light"] {
+    background-color: #ffffff;
+    color: black;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0rem;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    width: 22.0rem;
+  }
+  .open-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 18rem;
+  }
+  .close-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 7rem;
+  }
+</style>

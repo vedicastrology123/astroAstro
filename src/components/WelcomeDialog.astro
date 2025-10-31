@@ -1,17 +1,18 @@
 
-<dialog id="welcomeDialog">
+<dialog id=`welcomeDialog`>
   <p style="text-align: center;"><h5>Welcome to our Vedic Astrology website!</h5></p>
   <p> For a <a href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0" rel="noopener noreferrer"  target="_blank" > quick Whatsapp chat with Steve Hora, click here...</a></p>
   <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSf2SIxzRL87dW-pwnVLh5Q484ou7vLD1Yx-cKBLD7iXQvR3_g/viewform?pli=1" rel="noopener noreferrer"  target="_blank" > Birth Horoscope predictions, pleae fill this form...</a></p>
   <form method="dialog">
-    <button id="closeDialog">Close</button>
+    <button id=`closeDialog`>Close</button>
   </form>
 </dialog>
 
-<script type="text/javascript">
+<script>
   import { isDialogShown } from '../utils/dialog.js';
 
-  const dialog = document.getElementById('welcomeDialog');
+  const dialog = document.getElementById(`welcomeDialog`);
+  
   const closeBtn = document.getElementById('closeDialog');
   closeBtn.classList.add('close-button');
 
@@ -19,8 +20,9 @@
   let cookieValue = 'astro_cookie_value';
   let cookieExists = false;
   let myCookieValue = "";
-  
+
   document.addEventListener('DOMContentLoaded', () => {
+    
       myCookieValue = getCookie(cookieName);
       if (myCookieValue != null) {
         cookieExists = true;
@@ -80,7 +82,7 @@
   }
 </script>
 
-<style type="text/css">
+<style>
   /* Base dialog styles */
   dialog {
     padding: 2rem;
