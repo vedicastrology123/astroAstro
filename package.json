@@ -33,6 +33,7 @@
     "astro-webmanifest": "^1.0.0",
     "hast": "^1.0.0",
     "nanostores": "^1.0.1",
+    "npm": "^11.6.2",
     "preact": "^10.27.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

@@ -21,7 +21,7 @@
     "alias": "android"
   },
   "appVersionName": "Production",
-  "appVersionCode": 11,
+  "appVersionCode": 12,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://stevehora.com/manifest.json",
