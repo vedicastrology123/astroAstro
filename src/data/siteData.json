@@ -1,18 +1,13 @@
 {
-  "site_name": "vedic Astrology",
+  "site_name": "Vedic Astrology",
   "default": {
     "name": "Vedic Astrology by Steve Hora",
     "title": "Vedic Astrology by Steve Hora",
     "description": "Vedic Astrology by Steve Hora",
-    "openGraph": { 
-      "basic": {
-        "title": "Vedic Astrology by Steve Hora",
-        "description": "Vedic Astrology by Steve Hora",
-        "type": "website",
-        "url": "https://stevehora.com",
-        "image": "https://stevehora.com/shri-chakra.png",
-        "alt": "Vedic Astrology by Steve Hora"
-      }
+    "type": "Website",
+    "url": "https://stevehora.com",
+    "image": "https://stevehora.com/shri-chakra.png",
+    "alt": "Vedic Astrology by Steve Hora"
     },
     "twitter": {
       "title": "Vedic Astrology by Steve Hora",
@@ -39,4 +34,3 @@
       "vedicmoonSign": "Vrishabha"
     }
   }
-}

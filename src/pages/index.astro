@@ -9,14 +9,17 @@ const pageDescription = "Hora Vedic Astrology Advice by Steve for Birth Chart We
 const pageKeywords = ["Steve Hora", "Vedic Astrologer", "vedicastrology123@gmail.com", "www.stevehora.com", "Vedic Astrology", "Jyotish", "Calculate your Vedic Astrology Birth Chart", "Astrological advice", "Wealth", "Matrimony matching", "love compatibility", "27 nakshatras", "20 divisional charts", "Astrology Quora Question and Answers"];
 const pageWebsite = "www.stevehora.com";
 const pageEmail = "vedicastrology123@gmail.com";
-const pageUrl = pageWebsite + siteData.menu.url4;
+const canonicalURL = new URL(Astro.url.pathname, Astro.url);
+const siteURL = canonicalURL;
+const pageUrl = canonicalURL;
 
 const seoOverrides = {
   title: pageTitle,
   description: pageDescription,
   keywords: pageKeywords,
   url: pageUrl,
-  email: pageEmail
+  email: pageEmail,
+  type: "Webpage"
 };
 
 const structuredData = {

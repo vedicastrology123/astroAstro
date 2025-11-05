@@ -18,6 +18,15 @@ import ModalDialog from '../components/ModalDialog.astro';
 // Get the page's URL from Astro.url
 const url = Astro.url;
 
+export interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+  url: string;
+  email: string;
+  type: string;
+}
+
 const seoPageOverrides = Astro.props;
 const seo = { ...siteDefaults.default, ...seoPageOverrides }; // Merge defaults with overrides
 

@@ -12,8 +12,11 @@ const pageDescription = "Welcome to Vedic Astrology website by Steve Hora!";
 const pageKeywords = ["Steve Hora", "Vedic Astrologer", "Horoscope Predictions", "Mundane Wordly Predictions"];
 const pageWebsite = "www.stevehora.com";
 const pageEmail = "vedicastrology123@gmail.com";
-const pageUrl = pageWebsite + siteData.menu.menu7;
 const pageAnnounce = true;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.url);
+const siteURL = canonicalURL;
+const pageUrl = canonicalURL;
 
 const seoOverrides = {
   title: pageTitle,

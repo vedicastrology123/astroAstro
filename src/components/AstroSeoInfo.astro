@@ -5,22 +5,30 @@ import siteDefaults from '../data/siteData.json';
 const canonicalURL = new URL(Astro.url.pathname, Astro.url);
 const siteURL = new URL("/", Astro.url);
 
-
 // Get the page's frontmatter from Astro.props
-const { seo: frontmatter = {} } = Astro.props;
+//const { seo: frontmatter = {} } = Astro.props;
+
+export interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+  url: string;
+  email: string;
+  type: string;
+}
 
 const seoOverrides = Astro.props;
-const seo = { ...siteDefaults.default, ...seoOverrides, ...frontmatter }; // Merge defaults with overrides
+const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
 
 // Get the page's URL from Astro.url
-const imageUrl = siteDefaults.default.openGraph.basic.image;
+const imageUrl = siteDefaults.default.image;
 
 ---
 
 <AstroSeo
   canonical={ canonicalURL.toString() }
   openGraph={{
-    url: seo.path,
+    url: seo.url,
     title: seo.title,
     description: seo.description,
     type: seo.type,
@@ -29,15 +37,15 @@ const imageUrl = siteDefaults.default.openGraph.basic.image;
         url: imageUrl,
         width: 800,
         height: 600,
-        alt: seo.openGraph.basic.alt,
+        alt: seo.alt,
         type: 'image/jpeg',
       },
     ],
-    site_name: seo.openGraph.basic.url,
+    site_name: seo.url,
   }}
   twitter={{
-    handle: seo.twitter.creator,
-    site: seo.twitter.creator,
+    handle: siteDefaults.twitter.creator,
+    site: siteDefaults.twitter.creator,
     cardType: 'app',
   }}
 />
