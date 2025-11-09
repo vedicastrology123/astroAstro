@@ -12,7 +12,7 @@ import react from "@astrojs/react";
 import favicons from "astro-favicons";
 
 import netlify from '@astrojs/netlify';
-//import tailwindcss from "@tailwindcss/vite";
+//import linkValidator from 'astro-link-validator';
 
 import remarkLint from 'remark-lint';
 import remarkLintMaximumLineLength from 'remark-lint-maximum-line-length';
@@ -40,7 +40,7 @@ export default defineConfig({
   compressHTML: false,
   site: 'https://stevehora.com',
 
-  integrations: [
+  integrations: [ // linkValidator(), npm install github:rodgtr1/astro-link-validator
     sitemap(), mdx(), react(), favicons(),
     AstroPWA({
         manifestFilename: 'manifest.json',

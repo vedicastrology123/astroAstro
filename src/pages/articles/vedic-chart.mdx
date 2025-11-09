@@ -57,18 +57,21 @@ article:
    width: 60
 
 ---
+import { Image } from 'astro:assets';
+import appImage from '../../assets/images/articles/stevehora.com App.png';
+import chartImage from '../../assets/images/articles/Vedic birth Horoscope.jpg';
 
 ### Birth chart or Horoscope
 
 Birth chart is based on your accurate Date of Birth, Time and Place of Birth.
 
-If you want **a very detailed and professional** birth chart, use this [Android App](https://play.google.com/store/apps/details?id=com.stevehora.com.astrogram) , to make one.
+If you want **a very detailed and professional** birth chart, use this [Android App](https://play.google.com/store/apps/details?id=com.stevehora.com.astrogram) or scan this Google Play Store QR code. <br />
+<Image src={appImage} alt="Astrogram - Google Play Store App" width="144" height="144" />.
 
-It will look like below.
+The birth horoscope will look like below.
 
 
-
-<img src="/images/articles/Birth-Vedic-Horoscope.jpg" alt="A sample Vedic Astrology Birth Chart" width="400" height="500">
+<Image src={chartImage}  alt="A sample Vedic Astrology Birth Chart" width="800" height="600"/>
 
 A **pdf version** of your birth chart, can also be made available.
 

@@ -101,7 +101,7 @@ Refer above questions answer. Further research into Nadi Palm leaf timing method
 
 6. Mostly it is 3 years, so it is D60 being used. 7. Moving the house, for each set of years, gets the Mundane Predictions.
 
-<img src="/images/articles/quu1.png" alt="D 60" width="250" height="200">
+<img src="/images/articles/quu1.jpg" alt="D 60" width="250" height="200">
 
 </td>
 </tr>

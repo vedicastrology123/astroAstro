@@ -35,7 +35,11 @@ article:
    width: 60
   
 ---
-<img src="/images/articles/ch1.png" alt="Dasha system" width="363" height="165">
+import { Image } from 'astro:assets';
+import ch1 from '../../assets/images/articles/ch1.png';
+import ch2 from '../../assets/images/articles/ch2.png';
+
+<Image src={ch1} alt="Dasha system" width="363" height="165" />
 
 ### China Horoscope
 
@@ -43,7 +47,7 @@ The data for China’s natal horoscope is taken from above authentic source.
 
 Below is the vedic horoscope of China. Predictions will be continued, so followers can markup for more updates in this Q2A.
 
-<img src="/images/articles/ch2.png" alt="Dasha system" width="602" height="851">
+<Image src={ch2} alt="Dasha system" width="602" height="851" />
 
 In mundane astrology, when dealing with countries, it is very important to see, the 1st lord, its children (People), Relationship 7th house, 6th house of Conflict and Peace.
 

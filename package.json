@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.5",
     "@astrojs/markdown-remark": "^6.3.8",
-    "@astrojs/mdx": "^4.3.9",
+    "@astrojs/mdx": "^4.3.10",
     "@astrojs/netlify": "^6.6.0",
     "@astrojs/react": "^4.4.1",
     "@astrojs/sitemap": "^3.6.0",
@@ -29,6 +29,7 @@
     "@types/react-dom": "^19.2.2",
     "astro": "^5.15.2",
     "astro-favicons": "^3.1.5",
+    "astro-link-validator": "github:rodgtr1/astro-link-validator",
     "astro-seo-schema": "^5.1.0",
     "astro-webmanifest": "^1.0.0",
     "hast": "^1.0.0",
