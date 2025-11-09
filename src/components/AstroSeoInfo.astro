@@ -2,7 +2,6 @@
 import { AstroSeo } from '@astrolib/seo';
 import siteDefaults from '../data/siteData.json';
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.url);
 const siteURL = new URL("/", Astro.url);
 
 // Get the page's frontmatter from Astro.props
@@ -18,8 +17,10 @@ export interface Props {
 }
 
 const seoOverrides = Astro.props;
-const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
+const canonicalURL = new URL(Astro.url.pathname, Astro.url);
 
+const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
+seo.url = canonicalURL.toString();
 // Get the page's URL from Astro.url
 const imageUrl = siteDefaults.default.image;
 
