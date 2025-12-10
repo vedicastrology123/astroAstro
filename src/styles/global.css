@@ -1,3 +1,4 @@
+
 /* html.dark {
   background-color: #0d0950;
   color: #fff;
@@ -22,7 +23,7 @@
 } */
 
 :root[data-theme="light"] {
-	--background-color: #fff;
+
 	--color: #000000;
 	--heading-color: #222;
 	--link-color: #3273dc;
@@ -261,4 +262,150 @@ ion-router-link:hover {
   text-decoration: underline;
 }
 
-  
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0rem;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    width: 30.0rem;
+  }
+
+.form-group {
+  padding-bottom: 0.5rem;
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+    display: inline-block; /* Allows setting width and aligns with input */
+    width: 150px; /* Adjust this value to your desired label width */
+    text-align: left; /* Aligns text to the right within the label */
+    padding-right: 10px; /* Adds space between the label text and input */
+    vertical-align: middle; /* Aligns the label text vertically with the input */
+    margin-right: 10px; /* Adds some space between label and input */
+}
+
+.form-group input {
+    size: 15rem;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #000000;
+}
+
+.form-group select {
+    size: 75rem;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.space-div {
+    padding-bottom: 0.5rem;
+    padding-right: .25rem;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 22.0rem;
+    height: 2rem;
+    background-color: #000000;
+}
+.textarea {
+    display: inline-block;
+    vertical-align: top;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 25.0rem;
+    height: 12rem;
+}
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 7rem;
+  }
+
+.PhoneInputInput {
+    background-color: #0000;
+    color: white;
+    border: 1px;
+    border-color: #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 17rem;
+}
+
+.PhoneInputCountry {
+	/* position: relative;
+	align-self: stretch;
+	display: flex; */
+    color: white;
+    background-color: #000000;
+	align-items: left;
+	/* margin-right: 4.35em; */
+	/* margin-right: var(--PhoneInputCountrySelect-marginRight); */
+}
+
+PhoneInputCountrySelect {  
+    width: 55rem;   
+    border: 1px solid #fff;  
+    background: #000000;  
+    font-size: 14px;  
+    padding: 8px;   
+    color: #333;
+}
+
+.error-message {
+    color: red;
+}
+
+/* Style the overall dropdown container */
+flag-dropdown-container {
+  border: 0px solid #ccc;
+  border-radius: 25px;
+  padding: 0px;
+  background-color: #000000;
+}
+
+.css-selector-for-input {
+    background-color: #000000 !important; /* Example: AliceBlue background */
+}
+
+.css-selector-for-input:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+/* Style the country flag images */
+.country-flag {
+  width: 24px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-color: #000000;
+}
+
+/* Style the text within the dropdown */
+.flag-dropdown-container .country-name {
+  font-weight: bold;
+  color: #000000;
+}
+

@@ -10,6 +10,7 @@ import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 
 import favicons from "astro-favicons";
+import tailwindcss from '@tailwindcss/vite';
 
 import netlify from '@astrojs/netlify';
 //import linkValidator from 'astro-link-validator';
@@ -25,9 +26,9 @@ export default defineConfig({
   //   mode: "standalone",
   // }),
   server: {
-    headers: {
-      'Content-Type': 'text/html;charset=utf-8',
-    },
+    // headers: {
+    //   'Content-Type': 'text/html;charset=utf-8',
+    // },
   },
   markdown: {
     rehypePlugins: [[targetBlank, { domain: 'https://stevehora.com' }]],
@@ -89,7 +90,13 @@ export default defineConfig({
   ],
   adapter: netlify(),
   vite: {
-    //plugins: [tailwindcss()],
+    // ssr: {
+    //   noExternal: ['react-datepicker'],
+    // },
+    plugins: [tailwindcss()],
+    // rollupOptions: {
+    //   external: ['react-datepicker', 'react', 'react-dom'],
+    // },
     optimizeDeps: {
       include: ['@ionic/react', '@ionic/core'],
       // include: ['@ionic/react'],
