@@ -1,0 +1,94 @@
+---
+import '../styles/global.css';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'free-astro-components'
+
+interface Props {
+  modelId: string;
+}
+
+const { modelId } = Astro.props;
+
+---
+
+<Button class="open-button" label="Open Modal" data-modal-trigger={ modelId } />
+
+<Modal class="dialog" id={ modelId }>
+  <ModalHeader class="center-pos">
+    <h5>Welcome to our Vedic Astrology website!</h5>
+  </ModalHeader>
+  <ModalBody>
+        For a <a href="https://api.whatsapp.com/send/?phone=918610386346&text&type=phone_number&app_absent=0" rel="noopener noreferrer"  target="_blank" > quick Whatsapp chat with Steve Hora, click here...</a><br /><br />
+
+        For a <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2SIxzRL87dW-pwnVLh5Q484ou7vLD1Yx-cKBLD7iXQvR3_g/viewform?pli=1" rel="noopener noreferrer"  target="_blank" >Birth Horoscope predictions, pleae fill this form...</a> <br /><br />
+        <form method="dialog">
+            <Button class="close-button" label="Close" data-modal-close />
+        </form>
+    </ModalBody>
+    <!-- <ModalFooter>
+        <Button label="Close" data-modal-close />
+    </ModalFooter> -->
+</Modal>
+
+<script define:vars={{ modelId }}>
+    const modalInfo = document.querySelector( modelId );
+
+    document.addEventListener('astro:page-load', () => {
+  // Code to re-run after every navigation (equivalent to DOMContentLoaded for MPAs with VT)
+        const cookieDialog = document.getElementById(modelId);
+    //const dialog = document.getElementById(id);
+        if (cookieDialog) {
+        // Re-attach event listeners or re-initialize logic
+        alert();
+        }
+        });
+    // function showModal() {
+    //     if (dialog && typeof dialog.showModal === 'function') {
+    //         dialog.showModal();
+    //     }
+    }
+</script>
+
+<style>
+    .center-pos {
+        text-align: center;
+    }
+    .dialog {
+        padding: 2rem;
+        border: 1px solid #ccc;;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000000;
+        color: white;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        padding: 0rem;
+        border: 0px solid #ccc;
+        border-radius: 5px;
+        width: 22.0rem;
+    }
+    .open-button {
+        background-color: #007bff;
+        color: white;
+        padding: 0.75rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 8rem;
+    }
+    .close-button {
+        background-color: #007bff;
+        color: white;
+        padding: 0.75rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 7rem;
+    }
+</style>

@@ -13,7 +13,7 @@ import AuthorSchema from '../components/AuthorSchema.astro';
 import ArticleJsonLd from '../components/ArticleJsonLd.astro';
 import siteDefaults from '../data/siteData.json';
 import type { string } from 'astro:schema';
-import ModalDialog from '../components/ModalDialog.astro';
+//import WelcomeDialog from '../components/WelcomeDialog.astro';
 
 // Get the page's URL from Astro.url
 const url = Astro.url;
@@ -54,7 +54,6 @@ if (Astro.url.pathname === "/input") {
 
 	</head>
 	<body>
-
 				<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNVGR54"
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -65,7 +64,7 @@ if (Astro.url.pathname === "/input") {
 					<main>
 						<Menu />
 						<ion-content class="ion-padding">
-							{inputPage && <ModalDialog id="astrology-dialog" />}
+							<!-- {inputPage && <WelcomeDialog modelId="astrology-dialog" />} -->
 							<slot />		
 							<!-- {inputPage && <Announcements />} -->
 						</ion-content>
@@ -74,7 +73,6 @@ if (Astro.url.pathname === "/input") {
 			<Footer />
 		</ion-app>
 	</body>
-	<!-- <script src="../scripts/tawkto.jsx"></script>  -->
 </html>
 
 <style>
