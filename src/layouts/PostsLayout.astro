@@ -42,6 +42,7 @@ if (Astro.url.pathname === "/") {
 		<Fragment slot="head">
 			<ArticleJsonLd frontmatter={seo} url={canonicalURL} />
 		</Fragment>
+		<script src="../scripts/jotform.jsx"></script>
 	</head>
 	<body>
 		<ion-app>
@@ -58,7 +59,6 @@ if (Astro.url.pathname === "/") {
 				</div>
 			<Footer />
 		</ion-app>
-		<!-- <script src="../scripts/tawkto.jsx"></script>  -->
 	</body>
 </html>
 
