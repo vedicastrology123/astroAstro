@@ -43,7 +43,7 @@ Vedic astrology is one of the vedangas of the Vedas, the ancient Hindu scripture
 
 In Vedic astrology, a person s destiny is determined by his/her karma, which is set forth in the cosmic design.
 
-Our site provides [Free Vedic Astrology Birth Chart](/articles/birth-chart).
+Our site provides [Vedic Astrology Birth Chart](/articles/birth-chart).
 
 [Matrimony or Marriage Matching](/articles/marriage-compatibility).
 

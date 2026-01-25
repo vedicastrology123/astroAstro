@@ -79,7 +79,7 @@ Choose proper time and place and act, even the world, you will win with ease.
 
 ----from Thirukural (484 couplet) by Tamil Saint ThiruValluvar (1st century BC)
 
-Our site provides [Free Vedic Astrology Birth Chart](#birth-chart).
+Our site provides [Vedic Astrology Birth Chart](#birth-chart).
 
 [Matrimony or Marriage Matching](#matrimony-or-marriage-matching).
 

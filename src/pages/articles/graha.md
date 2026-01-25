@@ -71,7 +71,7 @@ Grahas or Planets have temporal and permanent relationships and characters to ea
 * Vedic Astrology, d 10 chart in Vedic Astrology, d-30 chart
 * Houses in Vedic Astrology
 * Vedic Astrology for beginners
-* Vedic Astrology free horoscope
+* Vedic Astrology horoscope
 * Zodiac Compatibility   Marriage, Love, Sex Ask Astrology
 * Zodiac Signs Compatibility   Sun Signs
 * Horoscope Matching   Nakshatra Match or Star Match   10 Poruthams for Marriage

@@ -53,7 +53,6 @@ article:
 **Question** Can you analyze my horoscope? Most of the astrologer's predictions didn't come true for me.
 
 **Answer**
-Maybe you had crossed your free quota limit for free prediction (aka accumulated good karma).
 
 Karma is Action with an Intention, good or bad.
 
@@ -66,5 +65,3 @@ If your Punya is too good, with or without any help from any Gurus or Good Astro
 If your Punya is excellent, God will directly get things happen in your life, without Gurus or Astrologers.
 
 So do Punya as much as possible, to reduce the deficit Pappa from Previous birth(s), such that, it eradicates all your Pappa till this birth. And till accumulates in this Janma, for it to become excellent, so God can directly help you out. Many use short-cut by going to temples Only, but Not doing other Punya works.
-
-I take up a horoscope for analysis only when that horoscope has good Punya and for free.

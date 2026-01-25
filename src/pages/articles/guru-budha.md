@@ -68,6 +68,6 @@ The stories in Hindu puranas have astrological significance.
 #### Vedic Astrology Information
 
 * Zodiac Sign Compatibility for Marriage
-* Horoscope Matching, Kundali Matching, Kundli Matching for Marriage Free
-* Free Horoscope and Kundli Matching   Match Your Kundli
-* Free Horoscope compatibility for marriage, love, relationship
+* Horoscope Matching, Kundali Matching, Kundli Matching for Marriage
+* Horoscope and Kundli Matching   Match Your Kundli
+* Horoscope compatibility for marriage, love, relationship

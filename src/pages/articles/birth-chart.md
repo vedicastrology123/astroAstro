@@ -20,7 +20,7 @@ lastmod: latest
 keywords:
   - "Lagna Chart"
   - "Birth Chart"
-  - "Free Birth Chart"
+  - "Birth Chart"
   - "Birth Chart Reading"
   
 news_keywords:
