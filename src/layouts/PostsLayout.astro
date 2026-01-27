@@ -42,7 +42,6 @@ if (Astro.url.pathname === "/") {
 		<Fragment slot="head">
 			<ArticleJsonLd frontmatter={seo} url={canonicalURL} />
 		</Fragment>
-		<script src="../scripts/jotform.jsx"></script>
 	</head>
 	<body>
 		<ion-app>
@@ -52,6 +51,7 @@ if (Astro.url.pathname === "/") {
 					<main>
 					<Menu />
 						<ion-content class="ion-padding">
+							<ion-button style="text-transform:none" shape="round" href="https://docs.google.com/forms/d/e/1FAIpQLSf2SIxzRL87dW-pwnVLh5Q484ou7vLD1Yx-cKBLD7iXQvR3_g/viewform?pli=1" target="_blank">Horoscope Predictions, Click here...</ion-button>
 							<slot />
 							<!-- {index && <Announcements />} -->
 						</ion-content>

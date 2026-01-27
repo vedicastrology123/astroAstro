@@ -12,6 +12,9 @@ import AstroSeoInfo from '../components/AstroSeoInfo.astro';
 import AuthorSchema from '../components/AuthorSchema.astro';
 import ArticleJsonLd from '../components/ArticleJsonLd.astro';
 import siteDefaults from '../data/siteData.json';
+import metaInfo from '../data/metadata.json';
+import IonicTabButton from '../components/ionic/IonicTabButton';
+
 import type { string } from 'astro:schema';
 //import WelcomeDialog from '../components/WelcomeDialog.astro';
 
@@ -63,6 +66,8 @@ if (Astro.url.pathname === "/input") {
 					<main>
 						<Menu />
 						<ion-content class="ion-padding">
+							
+<ion-button style="text-transform:none" shape="round" href="https://docs.google.com/forms/d/e/1FAIpQLSf2SIxzRL87dW-pwnVLh5Q484ou7vLD1Yx-cKBLD7iXQvR3_g/viewform?pli=1" target="_blank">Horoscope Predictions, Click here...</ion-button>
 							<!-- {inputPage && <WelcomeDialog modelId="astrology-dialog" />} -->
 							<slot />		
 							<!-- {inputPage && <Announcements />} -->
