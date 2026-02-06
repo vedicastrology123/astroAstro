@@ -1,0 +1,95 @@
+---
+import '../styles/variables.scss';
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import Announcements from '../components/Announcements.astro';
+import StructuredData from '../components/StructuredData.astro';
+import siteData from "../data/metadata.json";
+import siteInfo from "../data/siteData.json";
+
+const pageTitle = "About Us";
+const pageDescription = "Welcome to Vedic Astrology website by Steve Hora!";
+const pageKeywords = ["Steve Hora", "Vedic Astrologer", "Horoscope Predictions", "Mundane Wordly Predictions"];
+const pageWebsite = "www.stevehora.com";
+const pageEmail = "vedicastrology123@gmail.com";
+const canonicalURL = new URL(Astro.url.pathname, Astro.url);
+const siteURL = canonicalURL;
+const pageimageUrl = siteInfo.default.image; //"/images/success.jpg";
+const pageUrl = canonicalURL;
+
+const seoOverrides = {
+  title: pageTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+  url: pageUrl,
+  email: pageEmail,
+  type: "Webpage",
+  imageUrl: pageimageUrl
+};
+
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	name: pageTitle,
+	description: pageDescription,
+	url: new URL(siteData.menu.url3, Astro.site), 
+	keywords: pageKeywords,
+	website: pageWebsite,
+	email: pageEmail
+};
+
+---
+
+<Layout {...seoOverrides}>
+	<Fragment slot="structured-data">
+        <StructuredData structuredData={structuredData} />
+    </Fragment>
+	<ion-text color="secondary">
+		<h1>Chat with Steve Hora</h1>
+	</ion-text>
+
+	<p><h5><ion-router-link href="https://chat.google.com" rel="noopener noreferrer"  target="_blank"  title="Google Chat">Google Chat request to vedicastrology123@gmail.com.</ion-router-link></h5></p>
+	<p><h5><ion-router-link href="https://t.me/stevehora" target="_blank" title="Steve Hora Telegram">Telegram App.</ion-router-link></h5></p>
+    <p><h5><ion-router-link href="https://docs.google.com/forms/d/e/1FAIpQLSf2SIxzRL87dW-pwnVLh5Q484ou7vLD1Yx-cKBLD7iXQvR3_g/viewform?pli=1"  rel="noopener noreferrer" target="_blank" title="Horoscope predictions">Google Form to fill your birth details.</h5></ion-router-link></h5></p>
+	<br />
+	<ion-text color="secondary">
+		<h1>About Steve Hora, Vedic Astrology Expert</h1>
+	</ion-text>
+	<ion-text color="light"></ion-text>
+		<p>A born astrologer, as per Sri [Vaithiswara Agasthiya Koushiha Nadi Grantha in Tamil](/articles/nadi-astrology/).
+		In the palm-leaf reading, one of my professions are mentioned as below
+		</p>
+		<p>“ஜோதிடமும் கலை சார் அணி பண்டம் ….”
+
+		<p>It means Astrology, Graphical Yantras are some of my professions.
+
+		<p>I use Vedic (Sidereal) horoscope for Accurate timing and analysis, according to True Lahiri Ayanamsa (Chitra paksha), using sidereal solar years of 360, Horoscope Analysis is as per Parasara system and Timing using Vimshottari Dasha system and Samaya Amsa or Kaala or Naadi timing technique.</p>
+
+		<p>Astrologically, I love to analyze Vedic (Sidereal) or Western (Tropical) Astrology, comprehend it and solve the unresolved question of human existence, in its various aspects, events, tribulation and the very ending.</p>
+
+		<p>(This quality of mine is due to 5th lord Shukra sitting in 4th, and looking at 10th, Ketu is with Shani in Makara lagna. Shukra being my Yogakaraka graha, sitting in Aswini Ketu-nakshatra, in my horoscope).</p>
+
+		<p>I challenge the status quo, ad-literam and anecdotal of vedic and western astrology, navigate uncharted waters, to find newer vistas from the astrology lore and find the truth. Be unbiased, even with his own opinion, or by the very information gathered, than to assimilate, digest, critically analyze, synthesize and find the truest path, which had been lost to time.</p>
+
+		<p>(This quality of mine is due to Chandra exalted in Vrishabha and Makara Lagna Shani and Ketu sitting in Abhijit nakshatra, in my horoscope).</p>
+
+		<p>Astrological Quote
+
+		<p>ஞாலங் கருதினுங் கைகூடுங் காலம் கருதி இடத்தாற் செயின்</p>
+
+		<p>Choose proper time and place and act, even the world, you will win with ease.</p>
+
+		<p>--- from Thirukural (484 couplet) by Tamil Saint ThiruValluvar (1st century BC)</p>
+	</ion-text>
+	<ion-text color="secondary">
+		About Steve Hora (Vedic Astrologer) — Disambiguation & Clarification
+		www.stevehora.com is the only official website of Steve Hora, Vedic Astrologer.
+		Not affiliated with gambling, numerology, or probability systems by my name Steve Hora. I would not be legally binding, if any body are involved in those illegal activities, nor got or get affected by that.
+		<h1>References</h1>
+	</ion-text>
+	<section>
+		<p><ion-router-link href="https://www.quora.com/profile/Steve-Hora" rel="noopener noreferrer"  target="_blank"  title="Quora Q2A">Most Viewed Writer on Jyotish (Vedic Astrology) on Quora</ion-router-link></p>
+		<p><ion-router-link href="https://stevehora.substack.com/" rel="noopener noreferrer"  target="_blank"  title="Substack blog">Substack blog</ion-router-link></p>
+	</section>
+	<p><ion-router-link class="custom-center-label custom-footer-label" href="/about/" title="Copyright">{siteData.copyright}</ion-router-link>.</p>
+</Layout>
