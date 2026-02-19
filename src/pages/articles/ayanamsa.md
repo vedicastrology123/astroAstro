@@ -1,45 +1,42 @@
-﻿---
-layout: ../../layouts/PostsLayout.astro
-title: "Ayanamsa"
-descslug: "What is Ayanamsa?"
-date: "2020-07-31T10:35:30+05:30"
-image: images/articles/ayanamsa.jpg
-author: Steve Hora
-description : "A Scientific Calculation"
-information: "Expert Vedic Astrologer"
-type: "featured"
-categories: 
-  - "Vedic Astrology"
-tags:
-  - "Birth Chart Predictions"
-  - "Mundane Predictions"
-lead: Vedic Astrology by Steve Hora
-lastmod: latest
+---
 path:
-  - "https://stevehora.com/articles/ayanamsa/"
+  - https://stevehora.com/articles/ayanamsa/
+layout: ../../layouts/PostsLayout.astro
 keywords:
-  - "Ayanamsa"
-  - "Scientific Calculation"
-  - "Ayanamsa"
-  - "Precession of Equinox"
-  - "Vedic" 
-  
-news_keywords:
-  - "Vedic Astrology"
-  - "Steve Hora"
-
+  - Ayanamsa
+  - Scientific Calculation
+  - Ayanamsa
+  - Precession of Equinox
+  - Vedic
+author: Steve Hora
+lastmod: latest
+thumbnail: src/assets/images/articles/ayanamsa.jpg
+information: Expert Vedic Astrologer
+date: 2020-07-31T10:35:30+05:30
 structured:
-  type: "article"
-
+  type: article
 article:
   image:
-   author: "Steve Hora"
-   src: "images/vaashicon.png"
-   height: 60
-   width: 60
-  
+    author: Steve Hora
+    src: images/vaashicon.png
+    height: 60
+    width: 60
+news_keywords:
+  - Vedic Astrology
+  - Steve Hora
+title: Ayanamsa
+tags:
+  - Birth Chart Predictions
+  - Mundane Predictions
+type: featured
+image: images/articles/ayanamsa.jpg
+descslug: What is Ayanamsa?
+categories:
+  - Vedic Astrology
+lead: Vedic Astrology by Steve Hora
+description: A Scientific Calculation
+rating: 5
 ---
-
 ### Ayanamsa - A Scientific Calculation
 
 #### Scientific data
@@ -51,7 +48,7 @@ But Vedic Seers have to be credited for noting this great scientific data namely
 
 ##### Calculation of Ayanamsa using Modern Astronomical Data
 
-> Polaris (Alpha UMi) or Urs Major or Dhrurva nakshatra or the Pole star is the present reference star for measuring the precession of Earth or Ayanamsa.
+> Polaris (Alpha UMi) or Urs Major or Dhrurva nakshatra or the Pole star is the present reference star for measuring the precession of Earth or Ayanamsa as in Hindu tradition.
 
 North Ecliptic Pole (NEP) is 90 degree of center of Equator of Earth.
 
