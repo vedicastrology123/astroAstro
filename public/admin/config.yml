@@ -1,12 +1,12 @@
 collections:
-  - name: "article" # Used in routes, e.g., /admin/collections/blog
-    label: "Article" # Used in the UI
+  - name: "articles" # Used in routes, e.g., /admin/collections/blog
+    label: "Articles" # Used in the UI
     folder: "src/pages/articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in frontmatter
       - { label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/PostsLayout.astro" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "date", name: "date", widget: "datetime" }
+      - { label: "date", name: "date", widget: "string" }
       - { label: "image", name: "image", widget: "image" }
       - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
