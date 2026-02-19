@@ -42,6 +42,17 @@ export default defineConfig({
   site: 'https://stevehora.com',
 
   integrations: [ // linkValidator(), npm install github:rodgtr1/astro-link-validator
+    // DecapCMS({
+    //   config: {
+    //     backend: {
+    //       name: 'git-gateway',
+    //       branch: 'main',
+    //     },
+    //     collections: [
+    //       articles
+    //     ],
+    //   },
+    // }),
     sitemap(), mdx(), react(), favicons(),
     AstroPWA({
         manifestFilename: 'manifest.json',
@@ -90,6 +101,10 @@ export default defineConfig({
   ],
   adapter: netlify(),
   vite: {
+    ssr: {
+      // Force Vite to treat this package as external
+      external: ['decap-cms-app'],
+    },
     // ssr: {
     //   noExternal: ['react-datepicker'],
     // },
