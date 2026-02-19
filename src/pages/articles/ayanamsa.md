@@ -12,7 +12,7 @@ author: Steve Hora
 lastmod: latest
 thumbnail: src/assets/images/articles/ayanamsa.jpg
 information: Expert Vedic Astrologer
-date: 2020-07-31T10:35:30+05:30
+date: "2020-07-31T10:35:30+05:30"
 structured:
   type: article
 article:
