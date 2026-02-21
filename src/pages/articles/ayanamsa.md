@@ -5,7 +5,6 @@ layout: ../../layouts/PostsLayout.astro
 keywords:
   - Ayanamsa
   - Scientific Calculation
-  - Ayanamsa
   - Precession of Equinox
   - Vedic
 author: Steve Hora
