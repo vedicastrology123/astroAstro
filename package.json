@@ -27,7 +27,7 @@
     "@tailwindcss/vite": "^4.1.17",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "astro": "^5.16.15",
+    "astro": "^5.17.3",
     "astro-favicons": "^3.1.5",
     "astro-seo-schema": "^5.1.0",
     "astro-webmanifest": "^1.0.0",
