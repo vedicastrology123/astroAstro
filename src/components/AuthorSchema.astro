@@ -1,14 +1,12 @@
 ---
-import { Schema } from 'astro-seo-schema';
+import Schema from '../components/Schema.astro';
+
 import siteDefaults from '../data/siteData.json';
 
 const { seo: seoOverrides = {} } = Astro.props; // Get page-specific overrides
 const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with overrides
 
----
-
-<Schema
-  item={{
+const schemaData = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: siteDefaults.contact.name,
@@ -18,5 +16,7 @@ const seo = { ...siteDefaults.default, ...seoOverrides }; // Merge defaults with
     birthDate: siteDefaults.contact.birthDate,
     westernzodiacSign: siteDefaults.contact.westernzodiacSign,
     vedicmoonSign: siteDefaults.contact.vedicmoonSign
-  }}
-/>
+};
+---
+
+<Schema item={schemaData} />

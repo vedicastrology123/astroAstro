@@ -16,6 +16,7 @@ import metaInfo from '../data/metadata.json';
 import IonicTabButton from '../components/ionic/IonicTabButton';
 
 import type { string } from 'astro:schema';
+import BaseSEO from '../components/BaseSEO.astro';
 //import WelcomeDialog from '../components/WelcomeDialog.astro';
 
 // Get the page's URL from Astro.url
@@ -40,6 +41,7 @@ var inputPage = true;
 if (Astro.url.pathname === "/input") {
 	inputPage = false;
 }
+
 ---
 
 <!doctype html>
@@ -48,6 +50,7 @@ if (Astro.url.pathname === "/input") {
 		<title>{seo.title}</title>
 		<meta name="description" content={seo.description}>
 		<Header />
+		<BaseSEO title={seo.title} description={seo.description} />
 		<slot name="structured-data" />
 		<AstroSeoInfo slot="head" {...seo} />
 		<AuthorSchema slot="head" {...Astro.props} />
