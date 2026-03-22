@@ -42,4 +42,3 @@ build/
 ios/
 manifest-checksum.txt
 txt
-package-lock.json
