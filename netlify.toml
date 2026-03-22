@@ -2,3 +2,6 @@
     for = "/manifest.webmanifest"
     [headers.values]
     Content-Type = "application/manifest+json"
+    [dev]
+    command = "astro dev" # or your specific framework's command
+    targetPort = 4321
