@@ -56,6 +56,8 @@
     "workbox-window": "^7.3.0"
   },
   "overrides": {
-    "@astrojs/markdown-remark": "^7.0.0"
+    "astro": "^6.0.8",
+    "@astrojs/mdx": "^5.0.2",
+    "@astrojs/markdown-remark": "^7.0.1"
   }
 }
