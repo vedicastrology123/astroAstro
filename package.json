@@ -57,6 +57,9 @@
     "vite-plugin-pwa": "^1.1.0",
     "workbox-window": "^7.3.0"
   },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.34.8"
+  },
   "overrides": {
     "astro": "^6.0.8",
     "@astrojs/mdx": "^5.0.2",
