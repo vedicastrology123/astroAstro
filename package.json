@@ -44,6 +44,7 @@
     "react-redux": "^9.2.0",
     "sass": "^1.93.2",
     "schema-dts": "^1.1.5",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3"
   },
@@ -58,7 +59,8 @@
     "workbox-window": "^7.3.0"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "4.34.8"
+    "@rollup/rollup-linux-x64-gnu": "^4.34.8",
+    "@img/sharp-linux-x64": "^0.33.5"
   },
   "overrides": {
     "astro": "^6.0.8",
