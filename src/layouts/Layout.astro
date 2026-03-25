@@ -37,11 +37,15 @@ const seo = { ...siteDefaults.default, ...seoPageOverrides }; // Merge defaults 
 const canonicalURL = new URL(Astro.url.pathname, Astro.url);
 const siteURL = new URL("/", Astro.url);
 
-var inputPage = true;
-if (Astro.url.pathname === "/input") {
-	inputPage = false;
-}
+// var inputPage = true;
+// if (Astro.url.pathname === "/input") {
+// 	inputPage = false;
+// }
 
+var thisPage = true;
+if (Astro.url.pathname === "/horoscope-predictions") {
+	thisPage = false;
+}
 ---
 
 <!doctype html>
@@ -69,8 +73,12 @@ if (Astro.url.pathname === "/input") {
 					<main>
 						<Menu />
 						<ion-content class="ion-padding">
-							
-<ion-button style="text-transform:none" shape="round" href="/horoscope-predictions">For Horoscope Predictions, Click here...</ion-button>
+			{thisPage && 
+				<br />
+				<ion-text color="danger">
+					<ion-button style="text-transform:none" shape="round" href="/horoscope-predictions">For Horoscope Prediction, Click here...</ion-button>
+				</ion-text>	
+			}
 							<!-- {inputPage && <WelcomeDialog modelId="astrology-dialog" />} -->
 							<slot />		
 							<!-- {inputPage && <Announcements />} -->
