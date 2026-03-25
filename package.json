@@ -22,6 +22,7 @@
     "@ionic/core": "^8.7.7",
     "@ionic/react": "^8.7.7",
     "@ionic/react-router": "^8.7.7",
+    "@reduxjs/toolkit": "^2.11.2",
     "@tailwindcss/vite": "^4.1.17",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
@@ -40,6 +41,7 @@
     "react-hook-form": "^7.66.0",
     "react-phone-input-2": "^2.15.1",
     "react-phone-number-input": "^3.4.13",
+    "react-redux": "^9.2.0",
     "sass": "^1.93.2",
     "schema-dts": "^1.1.5",
     "tailwindcss": "^4.1.17",
@@ -58,6 +60,12 @@
   "overrides": {
     "astro": "^6.0.8",
     "@astrojs/mdx": "^5.0.2",
-    "@astrojs/markdown-remark": "^7.0.1"
+    "@astrojs/markdown-remark": "^7.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "slate": "^0.118.1",
+    "slate-react": "^0.118.1"
   }
 }
