@@ -99,7 +99,7 @@ export default defineConfig({
         },
       }),
   ],
-  adapter: netlify(),
+  adapter: netlify({ imageCDN: true,}),
   vite: {
     ssr: {
       // Force Vite to treat this package as external
