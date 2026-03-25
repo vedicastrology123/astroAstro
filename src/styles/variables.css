@@ -1,0 +1,86 @@
+/* Standard CSS Nesting and Variables for Astro 6 + Tailwind 4 */
+
+@media screen and (max-width: 768px) {
+  ion-content.ion-padding {
+    --ion-padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  ion-content.ion-padding {
+    --padding-start: 25%;
+  }
+  #p {
+    max-width: 80ch;
+  }
+}
+
+.custom-ion-title,
+.custom-menu-ion-title {
+  font-size: 1.2rem;
+  padding-left: 15%;
+}
+
+ion-title {
+  font-size: 1.2rem;
+  padding-left: 25%;
+}
+
+ion-row {
+  height: 100%;
+}
+
+.custom-item-background {
+  --ion-item-background: #333333;
+}
+
+.custom-list-background {
+  background-color: #333333;
+}
+
+.custom-footer-label {
+  font-size: 0.75em;
+}
+
+ion-item a {
+  text-decoration: none;
+}
+
+.custom-center-item {
+  display: flex;
+  align-items: center; /* Fixed 'auto' to 'center' for flex alignment */
+  justify-content: center;
+  height: 30px;
+
+  /* Native CSS nesting works perfectly here in Tailwind 4 */
+  .custom-center-label {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+}
+
+ion-menu {
+  --width: 18rem;
+  --height: 42rem;
+  --min-width: 15rem;
+  --max-width: 18rem;
+}
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 99;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
