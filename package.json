@@ -62,7 +62,8 @@
     "@rollup/rollup-linux-x64-gnu": "^4.34.8",
     "lightningcss-linux-x64-gnu": "^1.29.1",
     "lightningcss-linux-x64-musl": "^1.29.1",
-    "@img/sharp-linux-x64": "^0.33.5"
+    "@img/sharp-linux-x64": "^0.33.5",
+    "@tailwindcss/oxide-linux-x64-gnu": "4.1.17"
   },
   "overrides": {
     "astro": "^6.0.8",
