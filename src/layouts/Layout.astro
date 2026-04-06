@@ -43,7 +43,7 @@ const siteURL = new URL("/", Astro.url);
 // }
 
 var thisPage = true;
-if (Astro.url.pathname === "/horoscope-predictions" || Astro.url.pathname === "/thankyou") {
+if (Astro.url.pathname === "/horoscope-predictions" || Astro.url.pathname === "/thankyou"  || Astro.url.pathname === "/about") {
 	thisPage = false;
 }
 ---
