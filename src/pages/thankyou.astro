@@ -39,6 +39,8 @@ const structuredData = {
 	email: pageEmail
 };
 
+const name = Astro.url.searchParams.get('name');
+const ref = Astro.url.searchParams.get('ref');
 ---
 
 <Layout {...seoOverrides}>
@@ -49,9 +51,9 @@ const structuredData = {
 		<h1>Thank You</h1>
 	</ion-text>
 	<ion-text color="light"></ion-text>
-<p>Hi User, 😀</p>
+<p>Hi {name}, 😀</p>
 
-<p>Received your query. <span style="color: green;">&#x1F44D;</span></p>
+<p>Received your query. Your reference number is {ref}, quote that for further communications.<span style="color: green;">&#x1F44D;</span></p>
 <p>
 <ion-text color="danger">
 	<ion-button style="text-transform:none" shape="round" href="https://ig.me/m/stevehora_vedicastrology/" target="_blank">Chat for free prediction</ion-button>.
