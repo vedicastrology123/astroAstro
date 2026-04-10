@@ -51,9 +51,9 @@ const ref = Astro.url.searchParams.get('ref');
 		<h1>Thank You</h1>
 	</ion-text>
 	<ion-text color="light"></ion-text>
-<p>Hi {name}, 😀</p>
+<p>Hi <b style="fontWeight: bold; text-transform: capitalize; color: green;">{name}</b>, 😀</p>
 
-<p>Received your query. Your reference number is {ref}, quote that for further communications.<span style="color: green;">&#x1F44D;</span></p>
+<p>Received your query. Your reference number is <b style="color: green;">{ref}</b>, quote that for further communications.<span style="color: green;">&#x1F44D;</span></p>
 <p>
 <ion-text color="danger">
 	<ion-button style="text-transform:none" shape="round" href="https://ig.me/m/stevehora_vedicastrology/" target="_blank">Chat for free prediction</ion-button>.
